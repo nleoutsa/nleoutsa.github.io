@@ -23,7 +23,7 @@
 	}
 
 	.photos {
-		height: 500px;
+		height: 100px;
 		background: url();
 		background-size: cover;
 	}
@@ -69,7 +69,7 @@ var images = [
    ];
 
 $(".photos").css("background", "images[currentImage]");
-alert("hi");
+$(".photos").html(currentImage+images[currentImage+images[2]);
 //last and next buttons shuffle through image array
 
 $('.last').click(function()	{
@@ -80,7 +80,7 @@ $('.last').click(function()	{
 $('button').click(function()	{
 	currentImage = currentImage + 1;
 	$(".photos").css("background", "images[currentImage]");
-	alert("current image is"+currentImage);
+	$(".photos").html(currentImage+images[currentImage+images[2]);
 
 });
 
