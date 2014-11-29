@@ -48,10 +48,10 @@
 <button class="last">Last</button>
 <button class="next">Next</button>
 
-<script type="text/javascript">
+<script>
 
 // should push image url through to html <a> tag line in div with class=photos
-var currentImage = 0;
+var currentImage = 1;
 
 // array of 12 images
 var images = [
@@ -68,8 +68,8 @@ var images = [
 	url('http://i.imgur.com/9maRLyU.jpg')	// Lady Agnew
    ];
 
-
-
+$(".photos").css("background", "images[currentImage]")
+alert("hi");
 //last and next buttons shuffle through image array
 
 $('.last').click(function()	{
