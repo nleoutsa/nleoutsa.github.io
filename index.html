@@ -63,21 +63,23 @@ var images = [
 	'http://i.imgur.com/QBdi0eF.jpg',	// nose ring
 	'http://i.imgur.com/ibjkPYQ.jpg',	// sailor
 	'http://i.imgur.com/OloKvol.jpg',	// reclining
-	'http://i.imgur.com/9maRLyU.jpg',	// Lady Agnew
+	<a href="http://imgur.com/9maRLyU"><img src="http://i.imgur.com/9maRLyU.jpg" title="source: imgur.com" /></a>,	// Lady Agnew
    ];
 
-
+pushPhoto();
 
 //last and next buttons shuffle through image array
-var last = function()	{
+$('.last').click(function()	{
 	currentImage = currentImage - 1;
-}
+});
 
-var next = function()	{
+$('.next').click(function()	{
 	currentImage = currentImage + 1;
-}
+});
 
+var pushPhoto = {
 $('.photos').html(images[currentImage]);
+}
 
 </script>
 
