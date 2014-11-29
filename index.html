@@ -10,12 +10,12 @@
 		margin: 0 auto;
 		text-align: center;
 		max-width: 600px;
-		background: white;
-		color: black;
+		background: black;
+		color: white;
 	}
 
 	.photos {
-		height: 200px;
+		height: 1000px;
 		background: url();
 		background-size: cover;
 	}
@@ -43,15 +43,15 @@
 <script>
 
 var images = [
-	'http://i.imgur.com/zWgROSR.jpg',
-	'Type an adjective',
-	'Type a noun'
+	"url('http://i.imgur.com/zWgROSR.jpg')",
+	"url('http://i.imgur.com/tdeUIHo.jpg')",
+	"url('http://i.imgur.com/CldKYyx.jpg')"
    ];
 
 // Keep track of current prompt we're on
 var currentImage = 0;
 
-$('.photos.background.url').css(images[currentImage]);
+$('.photos').css("background", images[currentImage]);
 // should push image url through to html <a> tag line in div with class=photos
 
 /*
