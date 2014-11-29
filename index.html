@@ -10,8 +10,8 @@
 		margin: 0 auto;
 		text-align: center;
 		max-width: 600px;
-		background: white;
-		color: black;
+		background: black;
+		color: white;
 	}
 
 	.photos {
@@ -43,7 +43,7 @@
 <script>
 
 var images = [
-	'Type your name',
+	'http://i.imgur.com/zWgROSR.jpg',
 	'Type an adjective',
 	'Type a noun'
    ];
@@ -51,7 +51,7 @@ var images = [
 // Keep track of current prompt we're on
 var currentImage = 0;
 
-$('.photos').html("hello");
+$('.photos').html(images[currentImage]);
 // should push image url through to html <a> tag line in div with class=photos
 
 /*
