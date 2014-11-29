@@ -21,6 +21,7 @@
 	}
 
 	.photos {
+		background: url('http://i.imgur.com/9maRLyU.jpg');
 	}
 
 	</style>
@@ -50,23 +51,23 @@ var currentImage = 0;
 
 // array of 12 images
 var images = [
-	<img src='http://i.imgur.com/zWgROSR.jpg'>,	// horse
-	<img src='http://i.imgur.com/Tsaics2.png'>,	// stare
-	<img src='http://i.imgur.com/tdeUIHo.jpg'>,	// elephants
-	'http://i.imgur.com/CldKYyx.jpg',	// emma sitting
-	'http://i.imgur.com/otu2cw5.jpg',	// track
-	'http://i.imgur.com/OomnPqj.jpg',	// green sweatshirt
-	'http://i.imgur.com/g0kft5L.jpg',	// emma yellow
-	'http://i.imgur.com/01NDp9x.jpg',	// first self portrait
-	'http://i.imgur.com/QBdi0eF.jpg',	// nose ring
-	'http://i.imgur.com/ibjkPYQ.jpg',	// sailor
-	'http://i.imgur.com/OloKvol.jpg',	// reclining
-	<a href="http://imgur.com/9maRLyU"><img src="http://i.imgur.com/9maRLyU.jpg" title="source: imgur.com" /></a>,	// Lady Agnew
+	url('http://i.imgur.com/zWgROSR.jpg'),	// horse
+	url('http://i.imgur.com/tdeUIHo.jpg'),	// elephants
+	url('http://i.imgur.com/CldKYyx.jpg'),	// emma sitting
+	url('http://i.imgur.com/otu2cw5.jpg'),	// track
+	url('http://i.imgur.com/OomnPqj.jpg'),	// green sweatshirt
+	url('http://i.imgur.com/g0kft5L.jpg'),	// emma yellow
+	url('http://i.imgur.com/01NDp9x.jpg'),	// first self portrait
+	url('http://i.imgur.com/QBdi0eF.jpg'),	// nose ring
+	url('http://i.imgur.com/ibjkPYQ.jpg'),	// sailor
+	url('http://i.imgur.com/OloKvol.jpg'),	// reclining
+	url('http://i.imgur.com/9maRLyU.jpg')	// Lady Agnew
    ];
 
 pushPhoto();
 
 //last and next buttons shuffle through image array
+/*
 $('.last').click(function()	{
 	currentImage = currentImage - 1;
 });
@@ -74,10 +75,9 @@ $('.last').click(function()	{
 $('.next').click(function()	{
 	currentImage = currentImage + 1;
 });
+*/
 
-var pushPhoto = {
-$('.photos').html("images[currentImage]");
-}
+$(".photos").css("background", "images[currentImage]")
 
 </script>
 
