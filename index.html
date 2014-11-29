@@ -39,7 +39,7 @@
 </div>
 
 <div class="photos">
-	<img src=images[5]>
+	
 </div>
 
 <button class="last">Last</button>
@@ -48,13 +48,13 @@
 <script type="text/javascript">
 
 // should push image url through to html <a> tag line in div with class=photos
-var currentImage = 3;
+var currentImage = 0;
 
 // array of 12 images
 var images = [
-	'http://i.imgur.com/zWgROSR.jpg',	// horse
-	'http://i.imgur.com/Tsaics2.png',	// stare
-	'http://i.imgur.com/tdeUIHo.jpg',	// elephants
+	<img src='http://i.imgur.com/zWgROSR.jpg'>,	// horse
+	<img src='http://i.imgur.com/Tsaics2.png'>,	// stare
+	<img src='http://i.imgur.com/tdeUIHo.jpg'>,	// elephants
 	'http://i.imgur.com/CldKYyx.jpg',	// emma sitting
 	'http://i.imgur.com/otu2cw5.jpg',	// track
 	'http://i.imgur.com/OomnPqj.jpg',	// green sweatshirt
@@ -77,6 +77,7 @@ var next = function()	{
 	currentImage = currentImage + 1;
 }
 
+$('.photos').html(images[currentImage]);
 
 </script>
 
