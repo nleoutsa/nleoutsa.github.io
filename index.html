@@ -10,8 +10,8 @@
 		margin: 0 auto;
 		text-align: center;
 		max-width: 600px;
-		background: black;
-		color: white;
+		background: white;
+		color: black;
 	}
 
 	.photos {
@@ -51,7 +51,7 @@ var images = [
 // Keep track of current prompt we're on
 var currentImage = 0;
 
-$('.photos').html(images[currentImage]);
+$('.photos.background.url').css(images[currentImage]);
 // should push image url through to html <a> tag line in div with class=photos
 
 /*
