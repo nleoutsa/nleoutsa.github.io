@@ -9,7 +9,8 @@
 	body	{
 		text-align: center;
 		max-width: 600px;
-		background: #a8a6cb;
+		background: #white;
+		color: black;
 	}
 
 	.profile	{
@@ -21,6 +22,7 @@
 	}
 
 	.photos {
+		height: 500px;
 		background: url('http://i.imgur.com/9maRLyU.jpg');
 	}
 
@@ -44,7 +46,7 @@
 <button class="last">Last</button>
 <button class="next">Next</button>
 
-<script type="text/javascript">
+<script>
 
 // should push image url through to html <a> tag line in div with class=photos
 var currentImage = 0;
@@ -64,10 +66,9 @@ var images = [
 	url('http://i.imgur.com/9maRLyU.jpg')	// Lady Agnew
    ];
 
-pushPhoto();
 
 //last and next buttons shuffle through image array
-/*
+
 $('.last').click(function()	{
 	currentImage = currentImage - 1;
 });
@@ -75,7 +76,7 @@ $('.last').click(function()	{
 $('.next').click(function()	{
 	currentImage = currentImage + 1;
 });
-*/
+
 
 $(".photos").css("background", "images[currentImage]")
 
