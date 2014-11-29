@@ -51,38 +51,7 @@ var images = [
 // Keep track of current prompt we're on
 var currentImage = 0;
 
-// A function that will call the next prompt
-var nextPhoto = function() {
-
-	// if there is a next photo
-	if (currentimage < images.length) {
-		// put first prompt in all html elements with class 
-		$('.photos').html("this text went into photos div");
-		// move the next prompt into variable currentPrompt 
-		currentImage = currentImage + 1;
-	}
-	//or else if we're at the end of the array
-	else {
-		// put a new message into the html.
-		showFinal();
-	
-	}
-}
-
-//puts user answers into HTML
-var showFinal = function() {
-  $('.photos').html('This is the end');
-  // hide button at end
-	$('button').hide();
-}
-// run nextPhoto function when button is clicked
-$('button').click(function() {
-	nextPhoto();
-});
-
-// Show the first prompt as soon as js loads
-nextPhoto();
-
+$('.photos').html("hello");
 // should push image url through to html <a> tag line in div with class=photos
 
 /*
