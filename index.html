@@ -47,8 +47,10 @@
 
 <script type="text/javascript">
 
-// array of 12 images
+// should push image url through to html <a> tag line in div with class=photos
+var currentImage = 3;
 
+// array of 12 images
 var images = [
 	'http://i.imgur.com/zWgROSR.jpg',	// horse
 	'http://i.imgur.com/Tsaics2.png',	// stare
@@ -64,8 +66,7 @@ var images = [
 	'http://i.imgur.com/9maRLyU.jpg',	// Lady Agnew
    ];
 
-// should push image url through to html <a> tag line in div with class=photos
-var currentImage = 3;
+
 
 //last and next buttons shuffle through image array
 var last = function()	{
