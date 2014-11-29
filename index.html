@@ -10,14 +10,14 @@
 		margin: 0 auto;
 		text-align: center;
 		max-width: 600px;
-		background: black;
+		background: blue;
 		color: white;
 	}
 
 	.photos {
 		height: 1000px;
 		background: url();
-		background-size: cover;
+		background-size: 50%;
 	}
 
 	</style>
@@ -49,7 +49,7 @@ var images = [
    ];
 
 // Keep track of current prompt we're on
-var currentImage = 0;
+var currentImage = 1;
 
 $('.photos').css("background", images[currentImage]);
 // should push image url through to html <a> tag line in div with class=photos
