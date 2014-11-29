@@ -1,74 +1,81 @@
 <!DOCTYPE html>
-<head>
-<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+
+<html>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<style>
-body {
-text-align: center;
-font-family: 'Fjalla One';
-font-size: 20px;
-background: #e6eaf0;
-}
-button {
-margin: 40px;
-}
-input {
-font-size: 24px;
-}
-.fill {
-background: white;
-color: red;
-border-bottom: 2px black solid;
-font-family: 'Shadows Into Light';
-padding:0 6px;
-margin: 4px;
-}
-</style>
+
+<head>
+	<style>
+	body	{
+		text-align: center;
+		max-width: 600px;
+		background: #a8a6cb;
+	}
+
+	.profile	{
+
+	}
+
+	.info	{
+
+	}
+
+	.photos {
+
+	}
+
+	</style>
 </head>
 <body>
-<div class="prompt"></div>
-<button>Next</button>
-<script>
-// List of prompts for the user
-var prompts = [
-'Type your name',
-'Type an adjective',
-'Type a noun'
-];
-var answers=[];
-// Keep track of current prompt we're on
-var currentPrompt = 0;
-// A function that will call the next prompt
-var nextPrompt = function() {
-//if there's no answer in the form
-if (currentPrompt != 0){
-answers.push($('input').val());
+<div class="profile">
+	<h1>Nicholas Leoutsakos</h1>
+	<h3>Learn Love Create</h3>
+</div>
+
+<div class="info">
+	<h2>Me and my experience:</h2>
+	<p>I love to learn and create. I was born in Boston, transplanted to central Florida for my formative years, and find myself once again in wonderful New England looking for the right opportunity to move from programing enthusiast to practicing developer. I was introduced to Python and C++ while studying Linguistics at the University of Massachusetts, Amherst. Since then, I've done some independent study in the field, including reading "Digital Design and Computer Architecture," through which I learned a bit about C, assembly languages, and how they communicate with the machine down to the lowest levels of logic gates and transistors. I've had some time to play around on Project Euler where users solve increasingly difficult math puzzles through programming and am currently working through a computer science course on edX.com. In my free time I paint in oils, acrylics, and digitally with Photoshop and Procreate. I also enjoy woodworking, and 3d modeling/sculpting with programs like Maya and Mudbox.</p>
+</div>
+
+<div class="photos">
+	<img src = images[currentImage]>
+</div>
+
+<button class="last">Last</button>
+<button class="next">Next</button>
+
+<script type="text/javascript">
+
+// array of 12 images
+
+var images = [
+	'http://i.imgur.com/zWgROSR.jpg',	// horse
+	'http://i.imgur.com/Tsaics2.png',	// stare
+	'http://i.imgur.com/tdeUIHo.jpg',	// elephants
+	'http://i.imgur.com/CldKYyx.jpg',	// emma sitting
+	'http://i.imgur.com/otu2cw5.jpg',	// track
+	'http://i.imgur.com/OomnPqj.jpg',	// green sweatshirt
+	'http://i.imgur.com/g0kft5L.jpg',	// emma yellow
+	'http://i.imgur.com/01NDp9x.jpg',	// first self portrait
+	'http://i.imgur.com/QBdi0eF.jpg',	// nose ring
+	'http://i.imgur.com/ibjkPYQ.jpg',	// sailor
+	'http://i.imgur.com/OloKvol.jpg',	// reclining
+	'http://i.imgur.com/9maRLyU.jpg',	// Lady Agnew
+   ];
+
+// should push image url through to html <a> tag line in div with class=photos
+var currentImage = 0;
+
+//last and next buttons shuffle through image array
+var last = function()	{
+	currentImage = currentImage - 1;
 }
-// if there is a next prompt
-if (currentPrompt < prompts.length) {
-// put first prompt in all html elements with class
-$('.prompt').html(prompts[currentPrompt] +'<br><input type="text">');
-// move the next prompt into variable currentPrompt
-currentPrompt = currentPrompt + 1;
+
+var next = function()	{
+	currentImage = currentImage + 1;
 }
-//or else if we're at the end of the array
-else {
-// put a new message into the html.
-showFinal();
-}
-}
-//puts user answers into HTML
-var showFinal = function() {
-$('.prompt').html('This is the story of <span class="fill">'+answers[0]+'</span> and the <span class="fill">'+answers[1]+'</span> <span class="fill">'+answers[2]+'</span>.');
-// hide button at end
-$('button').hide();
-}
-// run nextPrompt function when button is clicked
-$('button').click(function() {
-nextPrompt();
-});
-// Show the first prompt as soon as js loads
-nextPrompt();
+
 </script>
+
 </body>
+</html>
