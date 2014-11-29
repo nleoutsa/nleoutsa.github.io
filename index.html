@@ -10,8 +10,8 @@
 		margin: 0 auto;
 		text-align: center;
 		max-width: 600px;
-		background: black;
-		color: white;
+		background: white;
+		color: black;
 	}
 
 	.photos {
@@ -42,28 +42,24 @@
 
 <script>
 
-var prompts = [
+var images = [
 	'Type your name',
 	'Type an adjective',
 	'Type a noun'
    ];
 
-var answers=[];
 // Keep track of current prompt we're on
-var currentPrompt = 0;
+var currentImage = 0;
 
 // A function that will call the next prompt
-var nextPrompt = function() {
-  //if there's no answer in the form
-  if (currentPrompt != 0){
-    answers.push($('input').val());
-  }
-	// if there is a next prompt
-	if (currentPrompt < prompts.length) {
+var nextPhoto = function() {
+
+	// if there is a next photo
+	if (currentimage < images.length) {
 		// put first prompt in all html elements with class 
-		$('.prompt').html(prompts[currentPrompt] +'<br><input type="text">');
+		$('.photos').html(images[currentImage]);
 		// move the next prompt into variable currentPrompt 
-		currentPrompt = currentPrompt + 1;
+		currentImage = currentImage + 1;
 	}
 	//or else if we're at the end of the array
 	else {
@@ -75,17 +71,17 @@ var nextPrompt = function() {
 
 //puts user answers into HTML
 var showFinal = function() {
-  $('.prompt').html('This is the story of <span class="fill">'+answers[0]+'</span> and the <span class="fill">'+answers[1]+'</span> <span class="fill">'+answers[2]+'</span>.');
+  $('.prompt').html('This is the end');
   // hide button at end
 	$('button').hide();
 }
-// run nextPrompt function when button is clicked
+// run nextPhoto function when button is clicked
 $('button').click(function() {
-	nextPrompt();
+	nextPhoto();
 });
 
 // Show the first prompt as soon as js loads
-nextPrompt();
+nextPhoto();
 
 // should push image url through to html <a> tag line in div with class=photos
 
