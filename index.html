@@ -21,7 +21,8 @@
 	}
 
 	.photos {
-
+		height: 500px;
+		width: 500px;
 	}
 
 	</style>
@@ -38,7 +39,7 @@
 </div>
 
 <div class="photos">
-	<img src = 'http://i.imgur.com/zWgROSR.jpg'>
+	<img src = 'images[currentImage]'>
 </div>
 
 <button class="last">Last</button>
@@ -74,6 +75,8 @@ var last = function()	{
 var next = function()	{
 	currentImage = currentImage + 1;
 }
+
+alert(images[2]);
 
 </script>
 
