@@ -20,6 +20,7 @@
 	}
 	.gallery	{
 		height: 670px;
+		max-width: 1000px;
 		position: relative;
 
 	}
@@ -98,7 +99,6 @@ $('.last').click(function()	{
 	};
 	loopImages();
 });
-
 $('.next').click(function(){	
 	currentImage = currentImage + 1;
 	if (currentImage > images.length -1)	{
@@ -107,6 +107,7 @@ $('.next').click(function(){
 	loopImages();
 });
 
+//display images in a loop
 var loopImages = function()	{
 	if (currentImage == 0) {
 		$('.leftPic').css("background", images[images.length - 1]);
@@ -127,6 +128,7 @@ var loopImages = function()	{
 	}
 	};
 
+//
 loopImages();
 </script>
 
