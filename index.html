@@ -17,10 +17,9 @@
 	li {
 		height: 400px;
 		display: inline;
-		padding: 10px;
 	}
 	.gallery	{
-		background: yellow;
+		background: blue;
 		height 670px;
 		position: relative;
 	}
@@ -102,10 +101,12 @@ $('.rightPic').css("background", images[currentImage + 1]);
 
 $('.last').click(function()	{
 	currentImage = currentImage - 1;
+	loopImages();
 });
 
 $('.next').click(function(){	
 	currentImage = currentImage + 1;
+	loopImages();
 });
 
 var loopImages = function()	{
