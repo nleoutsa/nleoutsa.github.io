@@ -13,7 +13,7 @@
 		text-align: center;
 		max-width: 700px;
 		background: #a5a5a5;
-		color: black;
+		color: white;
 	}
 	p 	{
 		text-align: center;
@@ -21,25 +21,21 @@
 	li {
 		display: inline;
 	}
-	small	{
-		height: 400px;
 
-  		transition: height .5s;
-  		-webkit-transition: height .5s;
-  		-moz-transition: height .5s;
+	.lower	{
+		opacity: .2;
+		left: 50px;
 	}
-	.lower small {
-  		height: 100px;
-  		opacity: .5;
-}
-	.gallery	{
 
+	.gallery	{
 		position: relative;
 		max-width: 600px;
 		margin: 0 auto;
 
 	}
+
 	.leftPic {
+		height: 200px;
 		width: 200px;
 		background: ;
 		position: absolute;
@@ -84,7 +80,7 @@
 
 <div class="gallery">
 <ul>
-	<li><small><div class="leftPic"></div></small></li>
+	<li><div class="leftPic"></div></li>
 	<li><div class="photos"></div></li>
 	<li><div class="rightPic"></div></li>
 </ul>
@@ -155,7 +151,7 @@ var loopImages = function()	{
 //
 loopImages();
 
- $('.gallery').click(function() {
+ $('.div').click(function() {
       $(this).toggleClass('lower');
   });
 </script>
