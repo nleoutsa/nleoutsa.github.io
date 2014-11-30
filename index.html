@@ -13,7 +13,7 @@
 		text-align: center;
 		max-width: 700px;
 		background: #a5a5a5;
-		color: black;
+		color: green;
 	}
 	p 	{
 		text-align: justify;
@@ -26,8 +26,13 @@
   		-webkit-transition: left 2s;
  		-moz-transition: left 2s;
 	}
+	small	{
+  		transition: left 2s;
+  		-webkit-transition: left 2s;
+ 		-moz-transition: left 2s;
+	}
 
-	.expand	div{
+	.expand	small{
 		
 		left: 200px;
 	}
@@ -96,9 +101,9 @@
 
 <div class="gallery">
 <ul>
-	<li><small><div class="leftPic"></div></small></li>
-	<li><small><div class="photos"></div></small></li>
-	<li><small><div class="rightPic"></div></small></li>
+	<li><div><small class="leftPic"></small></div></li>
+	<li><div><small class="photos"></small></div></li>
+	<li><div><small class="rightPic"></small></div></li>
 </ul>
 </div>
 
@@ -134,7 +139,7 @@ $('.leftPic').click(function()	{
 		currentImage = images.length -1;
 	};
 	loopImages();
-	$(this).toggleClass('slideRight');
+	$("div").toggleClass('slideRight');
 });
 $('.rightPic').click(function(){	
 	currentImage = currentImage + 1;
@@ -142,12 +147,12 @@ $('.rightPic').click(function(){
 		currentImage = 0;
 	};
 	loopImages();
-	$(this).toggleClass('slideLeft');
+	$("div").toggleClass('slideLeft');
 });
 
 // clicking center image expands/collapses pics
  $('.photos').click(function() {
-      $("div").toggleClass('expand');
+      $("small").toggleClass('expand');
   });
 
 
