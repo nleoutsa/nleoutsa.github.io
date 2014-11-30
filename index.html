@@ -13,7 +13,7 @@
 		text-align: center;
 		max-width: 700px;
 		background: #a5a5a5;
-		color: white;
+		color: black;
 	}
 	p 	{
 		text-align: justify;
@@ -32,11 +32,7 @@
 		left: 200px;
 	}
 
-	.slideLeft {
-		left: -200px;
-	}
-
-	.slideRight {
+	.slide {
 		left: +200px;
 	}
 
@@ -139,7 +135,7 @@ $('.leftPic').click(function()	{
 		currentImage = images.length -1;
 	};
 //	loopImages();
-	$("div").toggleClass('slideRight');
+	$("div").toggleClass('slide');
 });
 
 $('.rightPic').click(function(){	
@@ -148,7 +144,6 @@ $('.rightPic').click(function(){
 		currentImage = 0;
 	};
 //	loopImages();
-	$("div").toggleClass('slideLeft');
 });
 
 // clicking center image expands/collapses pics
