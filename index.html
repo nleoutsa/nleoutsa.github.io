@@ -13,8 +13,9 @@
 		text-align: center;
 		max-width: 600px;
 		background: #a5a5a5;
-		color: white;
+		color: black;
 	}
+
 	p 	{
 		text-align: justify;
 	}
@@ -22,6 +23,9 @@
 		display: inline;
 	}
 	div	{
+  		transition: left 2s;
+  		-webkit-transition: left 2s;
+ 		-moz-transition: left 2s;
 	}
 
 	.expand	div{
@@ -46,9 +50,6 @@
 		position: absolute;
 		left: -200px;
 		background-size: contain;
-  		transition: left 2s;
-  		-webkit-transition: left 2s;
- 		-moz-transition: left 2s;
 	}
 	.leftPic {
 		height: 200px;
@@ -57,9 +58,6 @@
 		position: absolute;
 		left: 0px;
 		background-size: contain;
-  		transition: left 2s;
-  		-webkit-transition: left 2s;
- 		-moz-transition: left 2s;
 
 	}
 	.photos {
@@ -70,9 +68,6 @@
 		left: 200px;
 		background-size: contain;
 		z-index: 1;
-  		transition: left 2s;
-  		-webkit-transition: left 2s;
- 		-moz-transition: left 2s;
 	}
 	.rightPic {
 		height: 200px;
@@ -82,8 +77,6 @@
 		left: 400px;
 		background-size: contain;
   		transition: left 2s;
-  		-webkit-transition: left 2s;
- 		-moz-transition: left 2s;
 	}
 	.rightHidden {
 		height: 200px;
@@ -92,13 +85,10 @@
 		position: absolute;
 		left: 600px;
 		background-size: contain;
-  		transition: left 2s;
-  		-webkit-transition: left 2s;
- 		-moz-transition: left 2s;
 	}
 
-	.buttons	{
-		margin: 500px auto 10px auto;
+	.info	{
+		margin: 50px;
 	}
 	</style>
 </head>
