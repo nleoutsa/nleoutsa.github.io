@@ -13,7 +13,7 @@
 		text-align: center;
 		max-width: 600px;
 		background: #a5a5a5;
-		color: white;
+		color: black;
 	}
 	
 	li {
@@ -209,6 +209,7 @@ $('.rightPic').click(function(){
 
 //display images in a loop
 var loopImages = function()	{
+
 	if (currentImage == 0) {
 		$('.leftHidden').css("background", images[images.length - 2]);
 		$('.leftPic').css("background", images[images.length - 1]);
@@ -217,7 +218,23 @@ var loopImages = function()	{
 		$('.rightHidden').css("background", images[currentImage + 2]);
 	}
 
+	if (currentImage == 1) {
+		$('.leftHidden').css("background", images[images.length - 1]);
+		$('.leftPic').css("background", images[0]);
+		$('.photos').css("background", images[currentImage]);
+		$('.rightPic').css("background", images[currentImage + 1]);
+		$('.rightHidden').css("background", images[currentImage + 2]);
+	}
+
 	else if (currentImage == images.length - 1) {
+		$('.leftHidden').css("background", images[currentImage - 2]);
+		$('.leftPic').css("background", images[currentImage - 1]);
+		$('.photos').css("background", images[currentImage]);
+		$('.rightPic').css("background", images[0]);
+		$('.rightHidden').css("background", images[1]);
+	}
+
+	if (currentImage == images.length - 2) {
 		$('.leftHidden').css("background", images[currentImage - 2]);
 		$('.leftPic').css("background", images[currentImage - 1]);
 		$('.photos').css("background", images[currentImage]);
