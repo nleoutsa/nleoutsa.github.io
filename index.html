@@ -13,7 +13,9 @@
 		background: white;
 		color: gray;
 	}
-
+	li{
+		display: inline;
+	}
 	.gallery	{
 		height 600px;
 		position: relative;
@@ -52,9 +54,11 @@
 
 //photos slide inside gallery
 <div class="gallery">
-	<div class="leftPic"></div>
-	<div class="photos"></div>
-	<div class="rightPic"></div>
+<ul>
+	<li><div class="leftPic"></div></li>
+	<li><div class="photos"></div></li>
+	<li><div class="rightPic"></div></li>
+</ul>
 </div>
 
 <button class="last">Last</button>
