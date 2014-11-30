@@ -13,7 +13,7 @@
 		text-align: center;
 		max-width: 700px;
 		background: #a5a5a5;
-		color: black;
+		color: white;
 	}
 	p 	{
 		text-align: justify;
@@ -37,7 +37,15 @@
 
 	}
 	.slideRight	div{
-		left: 400px;
+		left: 600px;
+
+	}
+	.slideRight	.photos{
+		left: 600px;
+
+	}
+	.slideRight	{
+		left: 600px;
 
 	}
 
@@ -141,8 +149,14 @@ $('.rightPic').click(function(){
 		currentImage = 0;
 	};
 	loopImages();
-	$("div").toggleClass('slideLeft');
+	$(".photos").toggleClass('slideLeft');
 });
+
+// clicking center image expands/collapses pics
+ $('.photos').click(function() {
+      $("div").toggleClass('expand');
+  });
+
 
 //display images in a loop
 var loopImages = function()	{
@@ -168,9 +182,6 @@ var loopImages = function()	{
 //
 loopImages();
 
- $('.photos').click(function() {
-      $("div").toggleClass('expand');
-  });
 </script>
 
 </body>
