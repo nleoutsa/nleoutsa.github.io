@@ -95,7 +95,7 @@ $('.rightPic').css("background", images[currentImage + 1]);
 
 $('.last').click(function()	{
 	currentImage = currentImage - 1;
-	if (currentImage = -1) {
+	if (currentImage < 0) {
 		currentImage = images.length - 1;
 	};
 	$('.leftPic').css("background", images[currentImage - 1]);
@@ -106,7 +106,7 @@ $('.last').click(function()	{
 
 $('.next').click(function(){	
 	currentImage = currentImage + 1;
-	if (currentImage = images.length) {
+	if (currentImage > images.length) {
 		currentImage = 0;
 	};
 	$('.leftPic').css("background", images[currentImage - 1]);
