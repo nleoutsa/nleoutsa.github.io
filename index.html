@@ -13,7 +13,7 @@
 		text-align: center;
 		max-width: 700px;
 		background: #a5a5a5;
-		color: black;
+		color: white;
 	}
 	p 	{
 		text-align: justify;
@@ -138,7 +138,7 @@ $('.leftPic').click(function()	{
 	if (currentImage < 0)	{
 		currentImage = images.length -1;
 	};
-	loopImages();
+//	loopImages();
 	$("div").toggleClass('slideRight');
 });
 
@@ -147,7 +147,7 @@ $('.rightPic').click(function(){
 	if (currentImage > images.length -1)	{
 		currentImage = 0;
 	};
-	loopImages();
+//	loopImages();
 	$("div").toggleClass('slideLeft');
 });
 
