@@ -13,7 +13,7 @@
 		text-align: center;
 		max-width: 600px;
 		background: #a5a5a5;
-		color: white;
+		color: black;
 	}
 	
 	li {
@@ -167,7 +167,7 @@ var images = [
 	"url('http://i.imgur.com/9maRLyU.jpg')"	// Lady Agnew
    ];
 // what is the current image?
-var currentImage = 4;
+var currentImage = 0;
 
 //clicking left and right pics shuffle through image array
 $('.leftPic').click(function()	{
@@ -175,7 +175,7 @@ $('.leftPic').click(function()	{
 	if (currentImage < 0)	{
 		currentImage = images.length -1;
 	};
-//	loopImages();
+	loopImages();
 	$("div").toggleClass('slide');
 });
 
@@ -184,7 +184,7 @@ $('.rightPic').click(function(){
 	if (currentImage > images.length -1)	{
 		currentImage = 0;
 	};
-//	loopImages();
+	loopImages();
 	$("div").toggleClass('slide');
 });
 
