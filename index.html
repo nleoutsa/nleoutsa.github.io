@@ -5,6 +5,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <head>
+	<link href="/normalize.css" rel="stylesheet">
 	<style>
 	body	{
 		margin: 0 auto;
@@ -84,7 +85,7 @@ var images = [
 	"url('http://i.imgur.com/9maRLyU.jpg')"	// Lady Agnew
    ];
 // Keep track of current prompt we're on
-var currentImage = 0;
+var currentImage = 1;
 
 // change background in css to image urls in array
 $('.leftPic').css("background", images[currentImage - 1]);
@@ -94,7 +95,7 @@ $('.rightPic').css("background", images[currentImage + 1]);
 
 $('.last').click(function()	{
 	currentImage = currentImage - 1;
-	if (currentImage <= 0) {
+	if (currentImage = -1) {
 		currentImage = images.length - 1;
 	};
 	$('.leftPic').css("background", images[currentImage - 1]);
@@ -105,7 +106,7 @@ $('.last').click(function()	{
 
 $('.next').click(function(){	
 	currentImage = currentImage + 1;
-	if (currentImage >= images.length) {
+	if (currentImage = images.length) {
 		currentImage = 0;
 	};
 	$('.leftPic').css("background", images[currentImage - 1]);
