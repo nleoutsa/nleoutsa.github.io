@@ -89,6 +89,8 @@ var images = [
 // Keep track of current prompt we're on
 var currentImage = 1;
 
+loopImages();
+
 //last and next buttons shuffle through image array
 $('.last').click(function()	{
 	currentImage = currentImage - 1;
@@ -120,7 +122,6 @@ var loopImages = function()	{
 	}
 	};
 
-loopImages();
 </script>
 
 </body>
