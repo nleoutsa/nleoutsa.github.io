@@ -13,7 +13,7 @@
 		text-align: center;
 		max-width: 600px;
 		background: #a5a5a5;
-		color: white;
+		color: green;
 	}
 
 	p 	{
@@ -89,7 +89,22 @@
 
 	.info	{
 		position: relative;
-		margin: 50px;
+		top: 800px;
+	}
+
+	.leftBorder	{
+		background: #a5a5b0;
+		z-index: 1;
+		width: 200px;
+		height: 1000px;
+		left: -200px;
+	}
+	.rightBorder	{
+		background: #a5a5b0;
+		z-index: 1;
+		width: 200px;
+		height: 1000px;
+		left: 600px;
 	}
 	</style>
 </head>
@@ -115,6 +130,9 @@
 	<li><div class="rightHidden"></div></li>
 </ul>
 </div>
+
+<div class="leftBorder"></div>
+<div class="rightBorder"></div>
 
 <div class="info">
 	<h2>my work:</h2>
