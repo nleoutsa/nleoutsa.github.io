@@ -102,13 +102,13 @@ $('.next').click(function(){
 });
 
 var loopImages = function()	{
-	if (currentImage = 0) {
+	if (currentImage == 0) {
 		$('.leftPic').css("background", images[images.length - 1]);
 		$('.photos').css("background", images[currentImage]);
 		$('.rightPic').css("background", images[currentImage + 1]);
 	}
 
-	else if (currentImage = images.length - 1) {
+	else if (currentImage == images.length - 1) {
 		$('.leftPic').css("background", images[currentImage - 1]);
 		$('.photos').css("background", images[currentImage]);
 		$('.rightPic').css("background", images[0]);
