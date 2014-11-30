@@ -13,7 +13,7 @@
 		text-align: center;
 		max-width: 600px;
 		background: #a5a5a5;
-		color: black;
+		color: white;
 	}
 	
 	li {
@@ -220,7 +220,7 @@ var loopImages = function()	{
 
 	if (currentImage == 1) {
 		$('.leftHidden').css("background", images[images.length - 1]);
-		$('.leftPic').css("background", images[0]);
+		$('.leftPic').css("background", images[currentImage - 1]);
 		$('.photos').css("background", images[currentImage]);
 		$('.rightPic').css("background", images[currentImage + 1]);
 		$('.rightHidden').css("background", images[currentImage + 2]);
@@ -238,8 +238,8 @@ var loopImages = function()	{
 		$('.leftHidden').css("background", images[currentImage - 2]);
 		$('.leftPic').css("background", images[currentImage - 1]);
 		$('.photos').css("background", images[currentImage]);
-		$('.rightPic').css("background", images[0]);
-		$('.rightHidden').css("background", images[1]);
+		$('.rightPic').css("background", images[currentImage + 1]);
+		$('.rightHidden').css("background", images[0]);
 	}
 
 	else	{
