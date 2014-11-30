@@ -13,7 +13,7 @@
 		text-align: center;
 		max-width: 600px;
 		background: #a5a5a5;
-		color: black;
+		color: blue;
 	}
 	
 	li {
@@ -29,14 +29,27 @@
 		left: 200px;
 	}
 
-	.slide div	{
 
+	@keyframes slider  {
+  		from  {
+    		left: 800px;
+  		}
 	}
-	.slide span	{
+	@-webkit-keyframes slider  {
+		from  {
+    		left: 800px;
+  		}
+	}
+	@-moz-keyframes slider  {
+  		from  {
+    		left: 800px;
+  		}
+	}
 
-	}
 	.slide {
-		left: +200px;
+		animation: slider 4s infinite;
+  		-webkit-animation: slider 4s infinite;
+  		-moz-animation: slider 4s infinite;
 	}
 
 	.gallery	{
