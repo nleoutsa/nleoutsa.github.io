@@ -110,6 +110,11 @@
 		position: absolute;
 	}
 
+	.big	{
+		height: 400px;
+		width: 400px;
+	}
+
 	</style>
 </head>
 <body>
@@ -184,7 +189,8 @@ $('.rightPic').click(function(){
       $("div").toggleClass('expand');
   });
 
-
+$(this).click(function() {
+      $(this).toggleClass('big');
 //display images in a loop
 var loopImages = function()	{
 
