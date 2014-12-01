@@ -13,7 +13,7 @@
 		text-align: center;
 		max-width: 600px;
 		background: #a5a5a5;
-		color: white;
+		color: black;
 	}
 	
 	li {
@@ -111,8 +111,8 @@
 	}
 
 	.big	{
-		height: 400px;
 		width: 400px;
+		height: 400px;
 	}
 
 	</style>
@@ -189,8 +189,9 @@ $('.rightPic').click(function(){
       $("div").toggleClass('expand');
   });
 
-$("div").click(function() {
+$(this).click(function() {
       $(this).toggleClass('big');
+  });
 //display images in a loop
 var loopImages = function()	{
 
