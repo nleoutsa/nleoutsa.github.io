@@ -13,7 +13,7 @@
 		text-align: center;
 		max-width: 600px;
 		background: #a5a5a5;
-		color: black;
+		color: white;
 	}
 	
 	li {
@@ -39,26 +39,19 @@
 		top: 200px;
 	}
 
-	.leftHidden	{
-		height: 200px;
-		width: 200px;
-		background: ;
-		position: absolute;
-		left: -200px;
-		background-size: contain;
-	}
 	.leftPic {
 		height: 200px;
 		width: 200px;
 		background: ;
+		position: absolute;
 		left: 0px;
 		background-size: contain;
-
 	}
 	.photos {
 		height: 200px;
 		width: 200px;
 		background: ;
+		position: absolute;
 		left: 200px;
 		background-size: contain;
 		z-index: 1;
@@ -70,15 +63,6 @@
 		position: absolute;
 		left: 400px;
 		background-size: contain;
-	}
-	.rightHidden {
-		height: 200px;
-		width: 200px;
-		background: ;
-		position: absolute;
-		left: 600px;
-		background-size: contain;
-		z-index: -1;
 	}
 
 	.zoom	{
@@ -137,11 +121,9 @@
 <div class="gallery">
 <ul>
 	<li><span class="leftBorder"></span></li>
-	<li><div class="leftHidden"></div></li>
 	<li><div class="leftPic"></div></li>
 	<li><div class="photos"></div></li>
 	<li><div class="rightPic"></div></li>
-	<li><div class="rightHidden"></div></li>
 	<li><span class="rightBorder"></span></li>
 	<li><p class="zoom"></p></li>
 </ul>
@@ -196,49 +178,20 @@ $('.rightPic').click(function(){
 //display images in a loop
 var loopImages = function()	{
 
+	$('.leftPic').css("background", images[currentImage - 1]);
 	$('.photos').css("background", images[currentImage]);
+	$('.rightPic').css("background", images[currentImage + 1]);
 	$('.zoom').css("background", images[currentImage]);
 
 	if (currentImage == 0) {
-		$('.leftHidden').css("background", images[images.length - 2]);
 		$('.leftPic').css("background", images[images.length - 1]);
-
-		$('.rightPic').css("background", images[currentImage + 1]);
-		$('.rightHidden').css("background", images[currentImage + 2]);
 	}
 
-	if (currentImage == 1) {
-		$('.leftHidden').css("background", images[images.length - 1]);
-		$('.leftPic').css("background", images[currentImage - 1]);
-		
-		$('.rightPic').css("background", images[currentImage + 1]);
-		$('.rightHidden').css("background", images[currentImage + 2]);
-	}
 
 	else if (currentImage == images.length - 1) {
-		$('.leftHidden').css("background", images[currentImage - 2]);
-		$('.leftPic').css("background", images[currentImage - 1]);
-		
 		$('.rightPic').css("background", images[0]);
-		$('.rightHidden').css("background", images[1]);
 	}
-
-	if (currentImage == images.length - 2) {
-		$('.leftHidden').css("background", images[currentImage - 2]);
-		$('.leftPic').css("background", images[currentImage - 1]);
-	
-		$('.rightPic').css("background", images[currentImage + 1]);
-		$('.rightHidden').css("background", images[0]);
-	}
-
-	else	{
-		$('.leftHidden').css("background", images[currentImage - 2]);
-		$('.leftPic').css("background", images[currentImage - 1]);
-	
-		$('.rightPic').css("background", images[currentImage + 1]);
-		$('.rightHidden').css("background", images[currentImage + 2]);
-	}
-	};
+};
 
 // start with images collapsed
 $("div").toggleClass('expand');
