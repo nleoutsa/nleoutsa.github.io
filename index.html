@@ -16,7 +16,9 @@
 		color: black;
 	}
 	
-	
+	li {
+		display: inline;
+	}
 
 	div	{
   		transition: left 2s;
@@ -28,32 +30,7 @@
 		left: 200px;
 	}
 
-
-	@keyframes slider  {
-  		from  {
-    		left: -100px;
-  		}
-	}
-	@-webkit-keyframes slider  {
-		from  {
-    		left: -100px;
-  		}
-	}
-	@-moz-keyframes slider  {
-  		from  {
-    		left: -100px;
-  		}
-	}
-
-	.slide {
-		left: 100px;
-	}
-	li {
-		display: inline;
-		animation: slider 4s 1;
-  		-webkit-animation: slider 4s 1;
-  		-moz-animation: slider 4s 1;
-	}
+	
 
 	.gallery	{
 		position: relative;
@@ -117,7 +94,7 @@
 		top: 0px;
 	}
 	.leftBorder	{
-		background: #black;
+		background: black;
 		z-index: 2;
 		width: 200px;
 		height: 500px;
@@ -125,7 +102,7 @@
 		position: absolute;
 	}
 	.rightBorder	{
-		background: #black;
+		background: black;
 		z-index: 2;
 		width: 200px;
 		height: 500px;
@@ -192,7 +169,6 @@ $('.leftPic').click(function()	{
 		currentImage = images.length -1;
 	};
 	loopImages();
-	$("li").toggleClass('slide');
 });
 
 $('.rightPic').click(function(){	
@@ -201,7 +177,6 @@ $('.rightPic').click(function(){
 		currentImage = 0;
 	};
 	loopImages();
-	$("li").toggleClass('slide');
 });
 
 // clicking center image expands/collapses pics
