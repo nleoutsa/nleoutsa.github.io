@@ -13,7 +13,7 @@
 		text-align: center;
 		max-width: 600px;
 		background: #a5a5a5;
-		color: white;
+		color: red;
 	}
 	
 	li {
@@ -173,7 +173,7 @@ $('.rightPic').click(function(){
 var loopImages = function()	{
 
 	$('.leftPic').css("background", images[currentImage - 1]);
-	$('.photos','.big').css("background", images[currentImage]);
+	$('.photos'+'.big').css("background", images[currentImage]);
 	$('.rightPic').css("background", images[currentImage + 1]);
 
 
