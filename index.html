@@ -13,7 +13,7 @@
 		text-align: center;
 		max-width: 600px;
 		background: #a5a5a5;
-		color: red;
+		color: white;
 	}
 	
 	li {
@@ -80,7 +80,7 @@
 		z-index: -4;
 	}
 	.zoom	{
-		top: 200px;
+		top: 180px;
 	}
 
 	.info	{
@@ -173,9 +173,10 @@ $('.rightPic').click(function(){
 var loopImages = function()	{
 
 	$('.leftPic').css("background", images[currentImage - 1]);
-	$('.photos'+'.big').css("background", images[currentImage]);
+	$('.photos').css("background", images[currentImage]);
 	$('.rightPic').css("background", images[currentImage + 1]);
 
+	$('.big').css("background", images[currentImage]);
 
 	if (currentImage == 0) {
 		$('.leftPic').css("background", images[images.length - 1]);
