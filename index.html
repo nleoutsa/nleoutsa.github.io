@@ -13,7 +13,7 @@
 		text-align: center;
 		max-width: 600px;
 		background: #a5a5a5;
-		color: white;
+		color: black;
 	}
 	
 	li {
@@ -74,7 +74,7 @@
 		left: 0px;
 		top:-600px;
 		background-size: cover;
-		z-index: -2;
+		z-index: -4;
 	}
 
 	.info	{
@@ -84,6 +84,17 @@
 
 	.borders	{
 		position: relative;
+	}
+
+
+	.topBorder	{
+		background: black;
+		z-index: -3;
+		width: 600px;
+		height: 600px;
+		left: 0px;
+		left: -600px;
+		position: absolute;
 	}
 	.leftBorder	{
 		background: black;
@@ -120,6 +131,7 @@
 
 <div class="gallery">
 <ul>
+	<li><span class="topBorder"></span></li>
 	<li><span class="leftBorder"></span></li>
 	<li><div class="leftPic"></div></li>
 	<li><div class="photos"></div></li>
