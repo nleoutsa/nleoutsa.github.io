@@ -13,7 +13,7 @@
 		text-align: center;
 		max-width: 600px;
 		background: #a5a5a5;
-		color: black;
+		color: white;
 	}
 	
 	li {
@@ -203,7 +203,7 @@ $('.rightPic').click(function(){
 
 // clicking center image expands/collapses pics
  $('.photos').click(function() {
-      $("div").toggleClass('expand');
+      $("li").toggleClass('expand');
   });
 
 
@@ -252,7 +252,7 @@ var loopImages = function()	{
 	};
 
 // start with images collapsed
-$("div").toggleClass('expand');
+$("li").toggleClass('expand');
 
 // set images
 loopImages();
