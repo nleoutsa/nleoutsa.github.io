@@ -13,7 +13,7 @@
 		text-align: justify;
 		max-width: 600px;
 		background: #a5a5a5;
-		color: black;
+		color: white;
 	}
 	li {
 		display: inline;
@@ -47,6 +47,7 @@
 	}
 	.bottomPic	{
 		left: 0;
+		top: 210px;
 	}
 	.profile {
 		position: relative;
@@ -200,6 +201,7 @@ $('.big').click(function(){
       $("div").toggleClass('expand');
       $(".big").toggleClass('zoom');
       $(".info").toggleClass('lower');
+      $(".bottomPic").toggleClass('lower')
   });
 
 //display images in a loop
@@ -214,7 +216,6 @@ var loopImages = function()	{
 	if (currentImage == 0) {
 		$('.leftPic').css("background", images[images.length - 1]);
 	}
-
 
 	else if (currentImage == images.length - 1) {
 		$('.rightPic').css("background", images[0]);
