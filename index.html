@@ -13,7 +13,7 @@
 		text-align: justify;
 		max-width: 600px;
 		background: #a5a5a5;
-		color: white;
+		color: black;
 	}
 	li {
 		display: inline;
@@ -35,7 +35,10 @@
 		text-align: justify;
 
 	}
-
+	img {
+		height: 200px;
+		left: 200px;
+	}
 
 	.expand	div{
 		left: 200px;
@@ -115,14 +118,15 @@
 <div>
 	<h1>Nicholas Maxwell Marlowe Leoutsakos</h1>
 	<h4>Words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words</h4>
+	<img src="http://i.imgur.com/JIY7LC6.jpg">
 </div>
 <div class="gallery">
 <ul>
 	<li><span class="topBorder"></span></li>
 	<li><div class="leftPic"></div></li>
 	<li><div class="photos"></div></li>
-	<li><div class="rightPic"></div></li>
-	<li><p class="big"></p></li>
+	<li><div class="rightPic" class="next"></div></li>
+	<li><p class="big" class="next"></p></li>
 	<li><h4 class="info">Words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words</h4></li>
 </ul>
 </div>
@@ -160,7 +164,7 @@ $('.leftPic').click(function()	{
 	loopImages();
 });
 
-$('.rightPic').click(function(){	
+$('.next').click(function(){	
 	currentImage = currentImage + 1;
 	if (currentImage > images.length -1)	{
 		currentImage = 0;
