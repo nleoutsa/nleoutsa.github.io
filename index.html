@@ -13,7 +13,7 @@
 		text-align: justify;
 		max-width: 600px;
 		background: #a5a5a5;
-		color: black;
+		color: white;
 	}
 	li {
 		display: inline;
@@ -102,8 +102,11 @@
 
 	.info	{
 		position: absolute;
-		top: 180px;
+		top: 190px;
 		left: 0px;
+	}
+	.lower	{
+		top: 790px;
 	}
 	
 	</style>
@@ -169,6 +172,7 @@ $('.rightPic').click(function(){
  $('.photos').click(function() {
       $("div").toggleClass('expand');
       $(".big").toggleClass('zoom');
+      $(".info").toggleClass('lower');
   });
 
 //display images in a loop
