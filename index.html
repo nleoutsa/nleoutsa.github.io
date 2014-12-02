@@ -13,7 +13,7 @@
 		text-align: center;
 		max-width: 600px;
 		background: #a5a5a5;
-		color: white;
+		color: black;
 	}
 	
 	li {
@@ -98,10 +98,20 @@
 		position: absolute;
 	}
 
-
 	</style>
 </head>
 <body>
+
+<div class="gallery">
+<ul>
+	<li><span class="topBorder"></span></li>	//hides large picture before photo gallery is activated
+	<li><div class="leftPic"></div></li>
+	<li><div class="photos"></div></li>
+	<li><div class="rightPic"></div></li>
+	<li><p class="big"></p></li>				//large picture
+</ul>
+</div>
+
 <div class="profile">
 	<h1>Nicholas Leoutsakos</h1>
 	<h3>preliminary project</h3>
@@ -112,17 +122,6 @@
 	<p>Words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words</p>
 </div>
 
-<div class="gallery">
-<ul>
-	<li><span class="topBorder"></span></li>
-	<li><div class="leftPic"></div></li>
-	<li><div class="photos"></div></li>
-	<li><div class="rightPic"></div></li>
-	<li><p class="big"></p></li>
-</ul>
-</div>
-
-
 
 
 <script>
@@ -130,16 +129,16 @@
 // array of images
 var images = [
 	"url('http://i.imgur.com/wiu9cFk.jpg')",	// horse
-	"url('http://i.imgur.com/EQOvgXu.jpg')",	// elephants
+	"url('http://i.imgur.com/TJ7YEjs.jpg')",	// green sweatshirt
+	"url('http://i.imgur.com/TFkftVq.jpg')",	// Lady Agnew
 	"url('http://i.imgur.com/xnv5NqD.jpg')",	// emma sitting
 	"url('http://i.imgur.com/09m22VZ.jpg')",	// track
-	"url('http://i.imgur.com/TJ7YEjs.jpg')",	// green sweatshirt
 	"url('http://i.imgur.com/YiVlgnF.jpg')",	// emma yellow
 	"url('http://i.imgur.com/ga60NEv.jpg')",	// first self portrait
+	"url('http://i.imgur.com/EQOvgXu.jpg')",	// elephants
 	"url('http://i.imgur.com/Pzz6Ded.jpg')",	// nose ring
 	"url('http://i.imgur.com/p0Mp7EM.jpg')",	// sailor
 	"url('http://i.imgur.com/76xH6od.jpg')",	// reclining
-	"url('http://i.imgur.com/TFkftVq.jpg')",	// Lady Agnew
 	"url('http://i.imgur.com/kutJzmS.jpg')"		// the stare
    ];
 
