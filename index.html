@@ -13,7 +13,7 @@
 		text-align: justify;
 		max-width: 600px;
 		background: #a5a5a5;
-		color: white;
+		color: black;
 	}
 	li {
 		display: inline;
@@ -36,7 +36,7 @@
 
 	}
 	img {
-		height: 200px;
+		height: 400px;
 		left: 200px;
 	}
 
@@ -125,8 +125,8 @@
 	<li><span class="topBorder"></span></li>
 	<li><div class="leftPic"></div></li>
 	<li><div class="photos"></div></li>
-	<li><div class="rightPic" class="next"></div></li>
-	<li><p class="big" class="next"></p></li>
+	<li><div class="rightPic"</div></li>
+	<li><p class="big"></p></li>
 	<li><h4 class="info">Words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words</h4></li>
 </ul>
 </div>
@@ -155,7 +155,7 @@ var images = [
 // what is the current image?
 var currentImage = 0;
 
-//clicking left and right pics shuffle through image array
+//clicking left and right pics(or big pic) shuffles through image array
 $('.leftPic').click(function()	{
 	currentImage = currentImage - 1;
 	if (currentImage < 0)	{
@@ -164,7 +164,14 @@ $('.leftPic').click(function()	{
 	loopImages();
 });
 
-$('.next').click(function(){	
+$('.rightPic').click(function(){	
+	currentImage = currentImage + 1;
+	if (currentImage > images.length -1)	{
+		currentImage = 0;
+	};
+	loopImages();
+});
+$('.big').click(function(){	
 	currentImage = currentImage + 1;
 	if (currentImage > images.length -1)	{
 		currentImage = 0;
