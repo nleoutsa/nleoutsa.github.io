@@ -12,7 +12,7 @@ body  {
     max-width: 600px;
     background: #a5a5a5;
     font-family: 'Roboto Slab', serif;
-    color: white;
+    color: black;
 }
 li {
     display: inline;
@@ -179,7 +179,7 @@ img {
 
        $('.leftPic').css("background", images[ (len + center - 1)%len ]);
 
-       $('.photos, .big').css("background", images[ (len + center)%len ]);
+       $('.photos, .big').css("background", images[ (center)%len ]);
 
        $('.rightPic').css("background", images[ (center+1)%len ]);
 
