@@ -12,7 +12,7 @@ body  {
     max-width: 600px;
     background: #a5a5a5;
     font-family: 'Roboto Slab', serif;
-    color: white;
+    color: blue;
 }
 li {
     display: inline;
@@ -181,19 +181,19 @@ img {
 
        $('.rightPic').css("background", images[ (center+1)%len ]);
 
-    }
+    };
 
     $('.leftPic').click(function() {
 
        updateSources(changeIndex(-1));
 
-    })
+    });
 
     $('.big, .rightPic').click(function(){
 
        updateSources(changeIndex(1));
 
-    })
+    });
 
     $('.photos').click(function() {
 
