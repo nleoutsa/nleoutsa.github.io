@@ -12,7 +12,7 @@ body  {
     max-width: 600px;
     background: #a5a5a5;
     font-family: 'Roboto Slab', serif;
-    color: white;
+    color: black;
 }
 li {
     display: inline;
@@ -161,20 +161,20 @@ img {
       "url('http://i.imgur.com/kutJzmS.jpg')" // the stare
     ];
 
-
+  //establish length of images array
     var len = images.length;
 
-    //current center image
+  //current center image
     var currentIndex = 0;
 
 
-
+  //determine value of center image after a click on left or right/big pics
     var changeIndex = function(direction) {
 
        return currentIndex = (currentIndex+direction)%len;
 
     };
-
+  //set gallery pics. 
     var updateSources = function(center) {
 
        $('.leftPic').css("background", images[ (len + center - 1)%len ]);
@@ -185,7 +185,7 @@ img {
 
     };
 
-
+  //left and right/big clicks shuffle through images
     $('.leftPic').click(function() {
 
        updateSources(changeIndex(-1));
@@ -198,6 +198,7 @@ img {
 
     });
 
+  //clicking on center photo opens/closes gallery
     $('.photos').click(function() {
 
        $("div").toggleClass('expand');
@@ -208,10 +209,11 @@ img {
 
     });
 
-
+  //start with gallery closing to imply that it can be opened by clicking center image...
     $("div").toggleClass('expand');
 
-    updateSources(0);
+  //set up initial gallery images.
+    updateSources(currentIndex);
 
 </script>
 </body>
