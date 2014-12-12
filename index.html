@@ -12,7 +12,7 @@ body  {
     max-width: 600px;
     background: #a5a5a5;
     font-family: 'Roboto Slab', serif;
-    color: white;
+    color: black;
 }
 li {
     display: inline;
@@ -167,9 +167,11 @@ img {
     //current center image
     var currentIndex = 0;
 
-    var changeIndex = function(direction) {
 
-       return currentIndex = (currentIndex + direction)%len;
+
+    var changeIndex = function() {
+
+       return currentIndex = (currentIndex)%len;
 
     };
 
@@ -192,7 +194,7 @@ img {
 
     $('.big, .rightPic').click(function(){
 
-       updateSources(changeIndex(+1));
+       updateSources(changeIndex(1));
 
     });
 
