@@ -179,7 +179,7 @@ img {
 
        $('.leftPic').css("background", images[ (len + center - 1)%len ]);
 
-       $('.photos, .big').css("background", images[ center ]);
+       $('.photos, .big').css("background", images[ (len + center)%len ]);
 
        $('.rightPic').css("background", images[ (len + center+1)%len ]);
 
