@@ -12,7 +12,7 @@ body  {
     max-width: 600px;
     background: #a5a5a5;
     font-family: 'Roboto Slab', serif;
-    color: black;
+    color: white;
 }
 li {
     display: inline;
@@ -173,15 +173,16 @@ img {
 
     };
 
-    var updateSources = function(center) {
+    var updateSources = function() {
 
-       $('.leftPic').css("background", images[ (center-1)%len ]);
+       $('.leftPic').css("background", images[ (currentIndex-1)%len ]);
 
-       $('.photos, .big').css("background", images[ center ]);
+       $('.photos, .big').css("background", images[ currentIndex ]);
 
-       $('.rightPic').css("background", images[ (center+1)%len ]);
+       $('.rightPic').css("background", images[ (currentIndex+1)%len ]);
 
     };
+
 
     $('.leftPic').click(function() {
 
