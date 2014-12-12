@@ -12,7 +12,7 @@ body  {
     max-width: 600px;
     background: #a5a5a5;
     font-family: 'Roboto Slab', serif;
-    color: black;
+    color: white;
 }
 li {
     display: inline;
@@ -169,19 +169,19 @@ img {
 
 
 
-    var changeIndex = function() {
+    var changeIndex = function(direction) {
 
-       return currentIndex = (currentIndex)%len;
+       return currentIndex = (currentIndex+1)%len;
 
     };
 
-    var updateSources = function() {
+    var updateSources = function(center) {
 
-       $('.leftPic').css("background", images[ (currentIndex-1)%len ]);
+       $('.leftPic').css("background", images[ (center-1)%len ]);
 
-       $('.photos, .big').css("background", images[ currentIndex ]);
+       $('.photos, .big').css("background", images[ center ]);
 
-       $('.rightPic').css("background", images[ (currentIndex+1)%len ]);
+       $('.rightPic').css("background", images[ (center+1)%len ]);
 
     };
 
@@ -207,6 +207,9 @@ img {
        $(".info, .bottomPic").toggleClass('lower');
 
     });
+
+
+    $("div").toggleClass('expand');
 
     updateSources();
 
