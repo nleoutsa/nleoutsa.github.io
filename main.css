@@ -64,15 +64,15 @@
 
 
 
-			#topPic {
+			.topPic {
 			    left: 400px;
 			}
-			#bottomPic  {
+			.bottomPic  {
 			    left: 0;
 			    top: 230px;
 			    height: 299px;
 			}
-			#leftPic {
+			.leftPic {
 			    height: 200px;
 			    width: 200px;
 			    background: ;
@@ -89,7 +89,7 @@
 			    background-size: contain;
 			    z-index: 1;
 			}
-			#rightPic {
+			.rightPic {
 			    height: 200px;
 			    width: 200px;
 			    background: ;
@@ -97,7 +97,7 @@
 			    left: 400px;
 			    background-size: contain;
 			}
-			#big  {
+			.big  {
 			    height: 600px;
 			    width: 600px;
 			    background: ;
@@ -107,7 +107,7 @@
 			    background-size: cover;
 			    z-index: -4;
 			}
-			#topBorder  {
+			.topBorder  {
 			    background: #a5a5a5;
 			    z-index: -3;
 			    width: 610px;
@@ -116,7 +116,7 @@
 			    top: -420px;
 			    position: absolute;
 			}
-			#info {
+			.info {
 			    top: 230px;
 			    left: 210px;
 			}

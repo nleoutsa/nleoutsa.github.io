@@ -17,18 +17,18 @@
 
 	  	<div class="profile">
 		    <h4>I love to learn and create. I was born in Boston, grew up in central Florida, and find myself once again in wonderful New England looking for the right opportunity to move from programing enthusiast to practicing developer. In my free time I paint in oils, acrylics, and digitally with Photoshop and Procreate, an iPad app.</h4>
-		    <img id="topPic" alt="Nicholas Leoutsakos in store" src="http://i.imgur.com/JIY7LC6.jpg">
+		    <img class="topPic" alt="Nicholas Leoutsakos in store" src="http://i.imgur.com/JIY7LC6.jpg">
 		</div>
 
 		<div class="gallery">
 		    <ul>
-		    	<li><span id="topBorder"></span></li>
-		    	<li><div id="leftPic"></div></li>
+		    	<li><span class="topBorder"></span></li>
+		    	<li><div class="leftPic"></div></li>
 		    	<li><div class="photos"></div></li>
-		    	<li><div id="rightPic"></div></li>
-		    	<li><p id="big"></p></li>
-		    	<li><img id="bottomPic" alt="Nick Leoutsakos on frozen pond" src="http://i.imgur.com/Y0lnvOC.jpg"></li>
-		    	<li><h4 id="info">I was introduced to Python and C++ while studying Linguistics at the University of Massachusetts, Amherst. Since then, I've done some independent study in the field, including reading "Digital Design and Computer Architecture," through which I learned a bit about C, assembly languages, and how they communicate with the machine down to the lowest levels of logic gates and transistors. I've had some time to play around on Project Euler where users solve increasingly difficult math puzzles through programming and am currently working through a computer science course on edX.com.</h4></li>
+		    	<li><div class="rightPic"></div></li>
+		    	<li><p class="big"></p></li>
+		    	<li><img class="bottomPic" alt="Nick Leoutsakos on frozen pond" src="http://i.imgur.com/Y0lnvOC.jpg"></li>
+		    	<li><h4 class="info">I was introduced to Python and C++ while studying Linguistics at the University of Massachusetts, Amherst. Since then, I've done some independent study in the field, including reading "Digital Design and Computer Architecture," through which I learned a bit about C, assembly languages, and how they communicate with the machine down to the lowest levels of logic gates and transistors. I've had some time to play around on Project Euler where users solve increasingly difficult math puzzles through programming and am currently working through a computer science course on edX.com.</h4></li>
 		    </ul>
 		</div>
 
@@ -65,22 +65,22 @@
 		  //set gallery pics. 
 		    var updateSources = function(center) {
 
-		       $('#leftPic').css("background", images[ (len + center - 1)%len ]);
+		       $('.leftPic').css("background", images[ (len + center - 1)%len ]);
 
-		       $('.photos, #big').css("background", images[ (len + center)%len ]);
+		       $('.photos, .big').css("background", images[ (len + center)%len ]);
 
-		       $('#rightPic').css("background", images[ (len + center+1)%len ]);
+		       $('.rightPic').css("background", images[ (len + center+1)%len ]);
 
 		    };
 
 		  //left and right/big clicks shuffle through images
-		    $('#leftPic').click(function() {
+		    $('.leftPic').click(function() {
 
 		       updateSources(changeIndex(-1));
 
 		    });
 
-		    $('#big, #rightPic').click(function(){
+		    $('.big, .rightPic').click(function(){
 
 		       updateSources(changeIndex(1));
 
@@ -91,9 +91,9 @@
 
 		       $("div").toggleClass('expand');
 
-		       $("#big").toggleClass('zoom');
+		       $(".big").toggleClass('zoom');
 
-		       $("#info, #bottomPic").toggleClass('lower');
+		       $(".info, .bottomPic").toggleClass('lower');
 
 		    });
 
