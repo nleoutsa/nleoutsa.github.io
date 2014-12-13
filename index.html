@@ -24,7 +24,7 @@
 		    <ul>
 		    	<li><span id="topBorder"></span></li>
 		    	<li><div id="leftPic"></div></li>
-		    	<li><div id="photos"></div></li>
+		    	<li><div class="photos"></div></li>
 		    	<li><div id="rightPic"></div></li>
 		    	<li><p id="big"></p></li>
 		    	<li><img id="bottomPic" alt="Nick Leoutsakos on frozen pond" src="http://i.imgur.com/Y0lnvOC.jpg"></li>
@@ -67,7 +67,7 @@
 
 		       $('#leftPic').css("background", images[ (len + center - 1)%len ]);
 
-		       $('#photos, #big').css("background", images[ (len + center)%len ]);
+		       $('.photos, #big').css("background", images[ (len + center)%len ]);
 
 		       $('#rightPic').css("background", images[ (len + center+1)%len ]);
 
@@ -87,7 +87,7 @@
 		    });
 
 		  //clicking on center photo opens/closes gallery
-		    $('#photos').click(function() {
+		    $('.photos').click(function() {
 
 		       $("div").toggleClass('expand');
 
