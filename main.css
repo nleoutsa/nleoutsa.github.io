@@ -1,4 +1,3 @@
-
 			body  {
 			    margin: 0 auto;
 			    text-align: center;
@@ -45,21 +44,11 @@
 			    max-width: 600px;
 			    margin: 0 auto 250px auto;
 			}
-			.expand div{
-			    left: 200px;
-			}
 			.gallery  {
 			    position: relative;
 			    max-width: 600px;
 			    margin: 0 auto;
 			    top: 0px;
-			}
-			.zoom {
-			    position: absolute;
-			    top: 180px;
-			}
-			.lower  {
-			    top: 830px;
 			}
 
 
@@ -119,4 +108,14 @@
 			.info {
 			    top: 230px;
 			    left: 210px;
+			}
+			.expand div{
+			    left: 200px;
+			}
+			.zoom {
+			    position: absolute;
+			    top: 180px;
+			}
+			.lower  {
+			    top: 830px;
 			}
