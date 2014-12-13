@@ -65,22 +65,22 @@
 		  //set gallery pics. 
 		    var updateSources = function(center) {
 
-		       $('.leftPic').css("background", images[ (len + center - 1)%len ]);
+		       $('#leftPic').css("background", images[ (len + center - 1)%len ]);
 
-		       $('.photos, .big').css("background", images[ (len + center)%len ]);
+		       $('#photos, #big').css("background", images[ (len + center)%len ]);
 
-		       $('.rightPic').css("background", images[ (len + center+1)%len ]);
+		       $('#rightPic').css("background", images[ (len + center+1)%len ]);
 
 		    };
 
 		  //left and right/big clicks shuffle through images
-		    $('.leftPic').click(function() {
+		    $('#leftPic').click(function() {
 
 		       updateSources(changeIndex(-1));
 
 		    });
 
-		    $('.big, .rightPic').click(function(){
+		    $('#big, #rightPic').click(function(){
 
 		       updateSources(changeIndex(1));
 
@@ -91,9 +91,9 @@
 
 		       $("div").toggleClass('expand');
 
-		       $(".big").toggleClass('zoom');
+		       $("#big").toggleClass('zoom');
 
-		       $(".info, .bottomPic").toggleClass('lower');
+		       $("#info, #bottomPic").toggleClass('lower');
 
 		    });
 
