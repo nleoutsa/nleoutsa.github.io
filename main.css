@@ -87,7 +87,7 @@
 			    position: absolute;
 			    left: 200px;
 			    background-size: contain;
-			    z-index: 1;
+			    z-index: 99;
 			}
 			.rightPic {
 			    height: 200px;
