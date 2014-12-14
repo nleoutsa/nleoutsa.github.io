@@ -33,19 +33,26 @@
 
 			}
 
+
 			.topPic	{
 				float: right;
 				width: 40%;
-				border: 2px solid purple;
+				border: 1px dotted purple;
 			}
 			.bottomPic	{
 				float: left;
 				width: 40%;
-				border: 2px solid yellow;
+				border: 1px dotted yellow;
 			}
 
-
-
+			#aboutMe	{
+				width: 40%;
+				float: left;
+			}
+			#info	{
+				width: 40%;
+				float: right;
+			}
 
 
 
