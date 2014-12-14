@@ -21,16 +21,15 @@
 		<section class="gallery">
 		    <ul>
 		    	<li><div class="topBorder">hahahahaha</div></li>
-		    	<li><div class="leftPic"></div></li>
-		    	<li><div class="photos"></div></li>
-		    	<li><div class="rightPic"></div></li>
+		    	<li><div class="leftPic">leftPic</div></li>
+		    	<li><div class="centerPic">centerPic</div></li>
+		    	<li><div class="rightPic">rightPic</div></li>
 		    	<li><div class="big"></div></li>
 		    	
 		    </ul>
 		</section>
 
 		<footer>
-			
 		   	<p id="info">I was introduced to Python and C++ while studying Linguistics at the University of Massachusetts, Amherst. Since then, I've done some independent study in the field, including reading "Digital Design and Computer Architecture," through which I learned a bit about C, assembly languages, and how they communicate with the machine down to the lowest levels of logic gates and transistors. I've had some time to play around on Project Euler where users solve increasingly difficult math puzzles through programming and am currently working through a computer science course on edX.com.</p>
 		   	<img class="bottomPic" alt="Nick Leoutsakos on frozen pond" src="http://i.imgur.com/Y0lnvOC.jpg">
 		</footer>
@@ -70,7 +69,7 @@
 
 		       $('.leftPic').css("background", images[ (len + center - 1)%len ]);
 
-		       $('.photos, .big').css("background", images[ (len + center)%len ]);
+		       $('.centerPic, .big').css("background", images[ (len + center)%len ]);
 
 		       $('.rightPic').css("background", images[ (len + center+1)%len ]);
 
@@ -90,7 +89,7 @@
 		    });
 
 		  //clicking on center photo opens/closes gallery
-		    $('.photos').click(function() {
+		    $('.centerPic').click(function() {
 
 		       $("div").toggleClass('expand');
 
