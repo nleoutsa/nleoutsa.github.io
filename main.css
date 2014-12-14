@@ -8,10 +8,11 @@
 			    margin: auto;
 			}
 			header	{
-
+				width: 95%;
 			}
 
 			section	{
+				width: 90%;
 				display: inline-block;
 			}
 			p 	{
@@ -25,6 +26,7 @@
 
 			.topPic	{
 				float: right;
+				width: 40%;
 			}
 			.bottomPic	{
 				float: left;
