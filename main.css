@@ -24,13 +24,21 @@
 				border: 2px dashed red;
 
 			}
+
+			div	{
+				clear: both;
+				display: inline-block;
+				height: 100%;
+				width: 33%;
+			}
+
 			p 	{
 				
 				display: inline-block;
 				border: 2px dashed white;
 
 			}
-			}
+			
 			img	{
 				
 				display: inline-block;
@@ -45,6 +53,10 @@
 				border: 2px dashed yellow;
 			}
 
+
+			.gallery	{
+				max-height: 200px;
+			}
 
 			.topPic	{
 				width: 30%;
