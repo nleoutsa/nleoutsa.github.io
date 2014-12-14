@@ -17,8 +17,15 @@
 
 			img	{
 				width: 40%;
+
 			}
 
+			#topPic	{
+				float: right;
+			}
+			#bottomPic	{
+				float: left;
+			}
 
 
 
