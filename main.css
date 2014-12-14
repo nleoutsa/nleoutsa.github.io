@@ -54,8 +54,14 @@
 			}
 
 
+			.topBorder	{
+				width: 100%;
+				background-color: red;
+				z-index: -1;
+			}
 			.gallery	{
-				max-height: 200px;
+				height: 500px;
+				width: 100%;
 			}
 
 			.topPic	{
