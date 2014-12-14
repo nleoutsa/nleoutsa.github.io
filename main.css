@@ -31,8 +31,6 @@
 			}
 			}
 			img	{
-				width: auto;
-				height: auto;
 				display: inline-block;
 				border: 2px dashed green;
 
@@ -46,6 +44,7 @@
 
 
 			.topPic	{
+				height: 90%;
 				float: right;
 				border: 1px dotted purple;
 			}
