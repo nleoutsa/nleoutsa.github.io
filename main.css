@@ -12,7 +12,7 @@
 			    border: 2px dashed black;
 			}
 			header	{
-				position: fixed;
+				position: absolute;
 				width: 95%;
 				text-align: center;
 				border: 2px dashed blue;
@@ -39,7 +39,7 @@
 				position: absolute;
 				width: 90%;
 				clear: both;
-				border: 2px dashed orange;
+				border: 2px dashed yellow;
 			}
 
 
@@ -48,15 +48,16 @@
 				width: 40%;
 				border: 1px dotted purple;
 			}
-			.bottomPic	{
-				float: left;
-				width: 40%;
-				border: 1px dotted yellow;
-			}
 
 			#aboutMe	{
 				width: 40%;
 				float: left;
+			}
+
+			.bottomPic	{
+				float: left;
+				width: 40%;
+				border: 1px dotted yellow;
 			}
 			#info	{
 				width: 40%;
