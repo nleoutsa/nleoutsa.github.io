@@ -68,7 +68,7 @@
 
 
 			@media	(max-width: 700px)	{
-				
+
 				p 	{
 					display: block;
 					border: 2px dashed white;
@@ -85,19 +85,21 @@
 					width: 100%;
 				}
 				.topPic	{
+					text-align: center;
 					margin: auto;
 					width: 90%;
 					border: 2px dashed white;
 				}
 
 
+				
+				#info	{
+					width: 100%;
+				}
 				.bottomPic	{
 					margin: auto;
 					width: 90%;
 					border: 1px dotted yellow;
-				}
-				#info	{
-					width: 100%;
 				}
 			}
 
