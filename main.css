@@ -5,7 +5,6 @@
 			    font-family: 'Roboto Slab', serif;
 			  
 			    display: block;
-			    max-width: 1000px;
 			    width: 100%;
 			    margin: auto;
 
@@ -21,7 +20,6 @@
 
 			section	{
 				width: 90%;
-				height: 300px;
 				margin: auto;
 				border: 2px dashed red;
 
@@ -39,7 +37,6 @@
 			}
 			footer	{
 				height: 90%;
-				height: 300px;
 				clear: both;
 				display: block;
 				margin: auto;
