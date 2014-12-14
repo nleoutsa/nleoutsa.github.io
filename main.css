@@ -68,6 +68,7 @@
 
 
 			@media	(max-width: 700px)	{
+				
 				p 	{
 					display: block;
 					border: 2px dashed white;
@@ -79,18 +80,20 @@
 
 				}
 
-				.topPic	{
-					width: 100%;
-					border: 2px dashed white;
-				}
-
 				#aboutMe	{
 					height: 100%;
 					width: 100%;
 				}
+				.topPic	{
+					margin: auto;
+					width: 90%;
+					border: 2px dashed white;
+				}
+
 
 				.bottomPic	{
-					width: 100%;
+					margin: auto;
+					width: 90%;
 					border: 1px dotted yellow;
 				}
 				#info	{
