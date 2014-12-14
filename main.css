@@ -1,3 +1,5 @@
+			
+
 			body  {
 			    background-color: #a5a5a5;
 			    font-family: 'Roboto Slab', serif;
@@ -6,31 +8,40 @@
 			    max-width: 1000px;
 			    width: 100%;
 			    margin: auto;
+
+			    border: 2px dashed black;
 			}
 			header	{
 				width: 95%;
+				text-align: center;
+				border: 2px dashed blue;
 			}
 
 			section	{
 				width: 90%;
-				display: inline-block;
+				display: inline;
+				border: 2px dashed red;
 			}
 			p 	{
 				width: 40%;
+				border: 2px dashed white;
 			}
 			}
 			img	{
 				width: 40%;
+				border: 2px dashed green;
 
 			}
 
 			.topPic	{
 				float: right;
 				width: 40%;
+				border: 2px solid purple;
 			}
 			.bottomPic	{
 				float: left;
 				width: 40%;
+				border: 2px solid yellow;
 			}
 
 
