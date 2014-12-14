@@ -19,18 +19,25 @@
 
 			section	{
 				width: 90%;
-				display: inline;
 				border: 2px dashed red;
 			}
 			p 	{
 				width: 40%;
+				display: inline-block;
 				border: 2px dashed white;
+
 			}
 			}
 			img	{
 				width: 40%;
+				display: inline-block;
 				border: 2px dashed green;
 
+			}
+			footer	{
+				width: 90%;
+				clear: both;
+				border: 2px dashed orange;
 			}
 
 
