@@ -85,8 +85,8 @@
 					width: 100%;
 				}
 				.topPic	{
-					text-align: center;
 					margin: auto;
+					float: none;
 					width: 90%;
 					border: 2px dashed white;
 				}
