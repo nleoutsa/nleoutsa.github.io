@@ -21,7 +21,7 @@
 
 			section	{
 				width: 90%;
-				text-align: center;
+				height: 300px;
 				border: 2px dashed red;
 			}
 			p 	{
