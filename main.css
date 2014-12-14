@@ -14,16 +14,19 @@
 			section	{
 				display: inline;
 			}
-
+			p 	{
+				width: 40%;
+			}
+			}
 			img	{
 				width: 40%;
 
 			}
 
-			#topPic	{
+			.topPic	{
 				float: right;
 			}
-			#bottomPic	{
+			.bottomPic	{
 				float: left;
 			}
 
