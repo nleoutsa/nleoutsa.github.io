@@ -7,7 +7,7 @@
 			    color: white;
 			}
 			li {
-			    display: inline;
+			    display: inline-block;
 			}
 			div {
 			    transition: left 2s;
