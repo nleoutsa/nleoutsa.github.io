@@ -55,7 +55,8 @@
 
 
 			.topBorder	{
-				width: 100%;
+				width: 300px;
+				height: 400px;
 				background-color: red;
 			}
 			.gallery	{
