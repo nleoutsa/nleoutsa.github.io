@@ -21,7 +21,7 @@
 
 			section	{
 				width: 90%;
-				height: 30%;
+				height: 300px;
 				margin: auto;
 				border: 2px dashed red;
 
@@ -38,7 +38,8 @@
 
 			}
 			footer	{
-				width: 90%;
+				height: 90%;
+				height: 300px;
 				clear: both;
 				display: block;
 				margin: auto;
@@ -47,13 +48,15 @@
 
 
 			.topPic	{
-				width: 90%;
+				height: 100%;
+				width: 40%;
 				float: right;
 				border: 1px dotted purple;
 			}
 
 			#aboutMe	{
-				width: 40%;
+				height: 100%;
+				width: 60%;
 				float: left;
 			}
 
