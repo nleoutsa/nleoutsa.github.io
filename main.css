@@ -67,6 +67,40 @@
 			}
 
 
+			@media	(width < 700px)	{
+					p 	{
+					display: block;
+					border: 2px dashed white;
+
+				}
+				img	{
+					display: block;
+					border: 2px dashed green;
+
+				}
+
+				.topPic	{
+					width: 35%;
+					float: right;
+					border: 2px dashed white;
+				}
+
+				#aboutMe	{
+					height: 100%;
+					width: 60%;
+					float: left;
+				}
+
+				.bottomPic	{
+					float: left;
+					width: 40%;
+					border: 1px dotted yellow;
+				}
+				#info	{
+					width: 40%;
+					float: right;
+				}
+			}
 
 
 
