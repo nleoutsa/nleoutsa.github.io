@@ -26,7 +26,6 @@
 			}
 
 			div	{
-				clear: both;
 				display: inline-block;
 				height: 100%;
 				width: 33%;
@@ -59,7 +58,7 @@
 			}
 			.gallery	{
 				height: 500px;
-				width: 100%;
+				clear: both;
 			}
 
 			.topPic	{
