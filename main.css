@@ -1,10 +1,23 @@
 			body  {
-			    background: #a5a5a5;
+			    background-color: #a5a5a5;
 			    font-family: 'Roboto Slab', serif;
 			    color: white;
+			    display: block;
+			    max-width: 1000px;
+			    width: 100%;
+			    margin: auto;
 			}
-		
+			header	{
 
+			}
+
+			section	{
+
+			}
+
+			img	{
+				width: 40%;
+			}
 
 
 
