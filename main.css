@@ -25,12 +25,14 @@
 
 			}
 			p 	{
+				width: 65%;
 				display: inline-block;
 				border: 2px dashed white;
 
 			}
 			}
 			img	{
+				width: 30%;
 				display: inline-block;
 				border: 2px dashed green;
 
@@ -45,24 +47,19 @@
 
 
 			.topPic	{
-				width: 35%;
 				float: right;
 				border: 2px dashed white;
 			}
 
 			#aboutMe	{
-				height: 100%;
-				width: 60%;
 				float: left;
 			}
 
 			.bottomPic	{
 				float: left;
-				width: 40%;
 				border: 1px dotted yellow;
 			}
 			#info	{
-				width: 40%;
 				float: right;
 			}
 
@@ -70,35 +67,37 @@
 			@media	(max-width: 700px)	{
 
 				p 	{
+					text-align: center;
+					width: 95%;
 					display: block;
+					margin: auto;
 					border: 2px dashed white;
 
 				}
 				img	{
+					width: 90%;
 					display: block;
+					margin: auto;
 					border: 2px dashed green;
 
 				}
 
 				#aboutMe	{
-					height: 100%;
-					width: 100%;
+					float: none;
+					
 				}
 				.topPic	{
-					margin: auto;
 					float: none;
-					width: 90%;
 					border: 2px dashed white;
 				}
 
 
 				
 				#info	{
-					width: 100%;
+					float: none;
 				}
 				.bottomPic	{
-					margin: auto;
-					width: 90%;
+					float: none;
 					border: 1px dotted yellow;
 				}
 			}
