@@ -12,6 +12,7 @@
 			    border: 2px dashed black;
 			}
 			header	{
+				position: fixed;
 				width: 95%;
 				text-align: center;
 				border: 2px dashed blue;
@@ -35,6 +36,7 @@
 
 			}
 			footer	{
+				position: absolute;
 				width: 90%;
 				clear: both;
 				border: 2px dashed orange;
