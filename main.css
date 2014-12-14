@@ -48,10 +48,9 @@
 
 
 			.topPic	{
-				height: 100%;
-				width: 40%;
+				width: 35%;
 				float: right;
-				border: 1px dotted purple;
+				border: 2px dashed white;
 			}
 
 			#aboutMe	{
