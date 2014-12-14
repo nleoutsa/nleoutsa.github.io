@@ -9,17 +9,17 @@
 			    margin: auto;
 
 			    border: 2px dashed black;
-			    color: white;
+			    color: black;
 			}
 			header	{
-				width: 95%;
+				width: 100%;
 				text-align: center;
 				border: 2px dashed blue;
 				margin: auto;
 			}
 
 			section	{
-				width: 90%;
+				width: 100%;
 				margin: auto;
 				border: 2px dashed red;
 
@@ -38,7 +38,7 @@
 
 			}
 			footer	{
-				height: 90%;
+				height: 100%;
 				clear: both;
 				display: block;
 				margin: auto;
