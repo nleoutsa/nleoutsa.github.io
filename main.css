@@ -61,8 +61,12 @@
 				height: 500px;
 				clear: both;
 			}
-
+			.center	{
+				display: inline-block;
+				width: 30%;
+			}
 			.topPic	{
+				display: inline-block;
 				width: 30%;
 				float: right;
 				border: 2px dashed white;
@@ -74,6 +78,7 @@
 			}
 
 			.bottomPic	{
+				display: inline-block;
 				width: 30%;
 				float: left;
 				border: 1px dotted yellow;
