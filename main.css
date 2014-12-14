@@ -18,10 +18,7 @@
 			    -webkit-transition: top 3s;
 			    -moz-transition: top 3s;
 			}
-			p {
-			    
-			}
-			h4  {
+			p 	{
 			    transition: top 3s;
 			    -webkit-transition: top 3s;
 			    -moz-transition: top 3s;
@@ -101,8 +98,12 @@
 			    top: 230px;
 			    left: 210px;
 			}
-			.expand div{
+			.expand	{
 			    left: 200px;
+			}
+
+			.expand div.big	{
+				left: 0;
 			}
 			
 			.big  {
