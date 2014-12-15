@@ -135,21 +135,22 @@ table {
 				display: inline-block;
 				width: 33%;
 				margin: auto;
-				background-size: 100%;
+				background-size: cover;
+
 			}
 			.centerPic	{
 				float: left;
 				display: inline-block;
 				width: 33%;
 				margin: auto;
-				background-size: 100%;
+				background-size: cover;
 			}
 			.rightPic	{
 				float: left;
 				display: inline-block;
 				width: 33%;
 				margin: auto;
-				background-size: 100%;
+				background-size: cover;
 			}
 			.big	{
 				margin: auto;
