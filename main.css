@@ -27,8 +27,6 @@
 
 			div	{
 				display: inline-block;
-				width: 33%;
-				height: 100%;
 				background: url("http://i.imgur.com/JIY7LC6.jpg");
 			}
 
@@ -61,7 +59,17 @@
 				height: 500px;
 				clear: both;
 			}
+			.leftPic	{
+				float: left;
+				display: inline-block;
+				width: 30%;
+			}
 			.center	{
+				display: inline-block;
+				width: 30%;
+			}
+			.rightPic	{
+				float: right;
 				display: inline-block;
 				width: 30%;
 			}
