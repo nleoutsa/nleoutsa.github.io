@@ -137,7 +137,6 @@ table {
 				float: left;
 				display: inline-block;
 				width: 33.33%;
-				margin: auto;
 				background-size: cover;
 
 			}
@@ -145,19 +144,16 @@ table {
 				float: left;
 				display: inline-block;
 				width: 33.33%;
-				margin: auto;
 				background-size: cover;
 			}
 			.rightPic	{
 				float: left;
 				display: inline-block;
 				width: 33.33%;
-				margin: auto;
 				background-size: cover;
 			}
 			.big	{
 				float: left;
-				margin: auto;
 				display: block;
 				width: 100%;
 				height: 100%;
