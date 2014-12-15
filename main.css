@@ -99,8 +99,6 @@ table {
 
 			div	{
 				height: 200px;
-				background-size: 30%;
-				background-repeat: no-repeat;
 			}
 
 			p 	{
@@ -138,6 +136,7 @@ table {
 				width: 30%;
 			}
 			.centerPic	{
+				float: center;
 				display: inline-block;
 				width: 30%;
 			}
