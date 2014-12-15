@@ -153,7 +153,7 @@ table {
 				background-size: cover;
 			}
 			.big	{
-				position: absolute;
+				position: relative;
 				float: left;
 				margin: auto;
 				display: block;
