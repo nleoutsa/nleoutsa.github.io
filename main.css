@@ -133,17 +133,28 @@ table {
 			.leftPic	{
 				float: left;
 				display: inline-block;
-				width: 30%;
+				width: 33%;
+				margin: auto;
+				background-size: 100%
 			}
 			.centerPic	{
 				float: left;
 				display: inline-block;
-				width: 30%;
+				width: 33%;
+				margin: auto;
+				background-size: 100%
 			}
 			.rightPic	{
 				float: left;
 				display: inline-block;
-				width: 30%;
+				width: 33%;
+				margin: auto;
+				background-size: 100%
+			}
+			.big	{
+				margin: auto;
+				display: block;
+				width: 99%;
 				background-size: 100%
 			}
 			.topPic	{
