@@ -153,10 +153,10 @@ table {
 				background-size: cover;
 			}
 			.big	{
-				float: right;
+				float: left;
 				margin: auto;
 				display: block;
-				width: 99%;
+				width: 100%;
 				height: 100%;
 				background-size: cover;
 				z-index: 2;
@@ -185,7 +185,7 @@ table {
 			}
 
 
-			@media	(max-width: 700px)	{
+			@media	(max-width: 500px)	{
 
 				p 	{
 					text-align: center;
