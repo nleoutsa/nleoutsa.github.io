@@ -133,7 +133,7 @@ table {
 			.leftPic	{
 				float: left;
 				display: inline-block;
-				width: 33%;
+				width: 33.33%;
 				margin: auto;
 				background-size: cover;
 
@@ -141,14 +141,14 @@ table {
 			.centerPic	{
 				float: left;
 				display: inline-block;
-				width: 33%;
+				width: 33.33%;
 				margin: auto;
 				background-size: cover;
 			}
 			.rightPic	{
 				float: left;
 				display: inline-block;
-				width: 33%;
+				width: 33.33%;
 				margin: auto;
 				background-size: cover;
 			}
