@@ -131,14 +131,17 @@ table {
 				clear: both;
 			}
 			.leftPic	{
+				float: center;
 				display: inline-block;
 				width: 30%;
 			}
 			.centerPic	{
+				float: center;
 				display: inline-block;
 				width: 30%;
 			}
 			.rightPic	{
+				float: center;
 				display: inline-block;
 				width: 30%;
 			}
