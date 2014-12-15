@@ -141,13 +141,13 @@ table {
 				width: 30%;
 			}
 			.rightPic	{
-				float: right;
 				display: inline-block;
 				width: 30%;
 			}
 			.topPic	{
 				display: inline-block;
 				width: 30%;
+				float: right;
 				border: 2px dashed white;
 			}
 
