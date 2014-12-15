@@ -67,11 +67,11 @@
 		  //set gallery pics. 
 		    var updateSources = function(center) {
 
-		       $('.leftPic').css("background", images[ (len + center - 1)%len ]);
+		       $('.leftPic').css("background-image", images[ (len + center - 1)%len ]);
 
-		       $('.centerPic, .big').css("background", images[ (len + center)%len ]);
+		       $('.centerPic, .big').css("background-image", images[ (len + center)%len ]);
 
-		       $('.rightPic').css("background", images[ (len + center+1)%len ]);
+		       $('.rightPic').css("background-image", images[ (len + center+1)%len ]);
 
 		    };
 
