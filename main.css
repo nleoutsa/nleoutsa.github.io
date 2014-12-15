@@ -144,6 +144,7 @@ table {
 				float: left;
 				display: inline-block;
 				width: 30%;
+				background-size: 100%
 			}
 			.topPic	{
 				display: inline-block;
