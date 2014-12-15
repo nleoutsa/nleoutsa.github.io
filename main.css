@@ -92,7 +92,7 @@ table {
 
 			section	{
 				width: 100%;
-				margin: auto;
+				margin: 0;
 				border: 2px dashed red;
 
 			}
