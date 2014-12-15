@@ -127,8 +127,6 @@ table {
 				background-color: red;
 			}
 			.gallery	{
-				margin: 0;
-				float: left;
 				width: 100%;
 				height: 500px;
 				clear: both;
