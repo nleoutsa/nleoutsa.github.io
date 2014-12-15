@@ -97,6 +97,7 @@ table {
 			}
 
 			div	{
+				height: 30%;
 			}
 
 			p 	{
@@ -152,7 +153,6 @@ table {
 				float: left;
 				display: block;
 				width: 100%;
-				height: 100%;
 				background-size: cover;
 				z-index: 2;
 			}
