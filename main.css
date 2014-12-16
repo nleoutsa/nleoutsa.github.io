@@ -92,8 +92,8 @@ table {
 
 			}
 
+
 			div	{
-				height: 33.33%;
 			}
 
 			p 	{
@@ -113,7 +113,7 @@ table {
 				display: block;
 				margin: auto;
 			}
-
+			
 
 			.topBorder	{
 				background-color: red;
@@ -123,9 +123,21 @@ table {
 			}
 			.gallery	{
 				display: inline-block;
-				width: 100%;
 				position: relative;
+				width: 100%;
 				clear: both;
+			}
+
+			#dummy	{
+				margin-top: 75%;
+			}
+			
+			#element	{
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
 			}
 			.leftPic	{
 				float: left;
