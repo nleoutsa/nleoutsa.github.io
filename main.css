@@ -75,13 +75,19 @@ table {
 			body  {
 			    background-color: #a5a5a5;
 			    font-family: 'Roboto Slab', serif;
+			  
+			    display: block;
+			    max-width: 100%;
 			    color: black;
 			}
 			header	{
+				width: 100%;
 				text-align: center;
 			}
 
 			section	{
+				width: 100%;
+
 			}
 
 
@@ -90,45 +96,61 @@ table {
 			}
 
 			p 	{
+				
+				display: inline-block;
+
 			}
 			
 			img	{
-			}
+				
+				display: inline-block;
 
+			}
 			footer	{
+				width: 100%;
 				clear: both;
+				display: block;
 			}
 			
 
 			.topBorder	{
 				background-color: red;
+				display: block;
 				float: left;
+				width: 100%;
 			}
 			.gallery	{
+				display: inline-block;
+				width: 100%;
 				clear: both;
 			}
 			.leftPic	{
 				float: left;
+				display: block;
 				width: 33.33%;
 				background-size: cover;
 
 			}
 			.centerPic	{
 				float: left;
+				display: block;
 				width: 33.33%;
 				background-size: cover;
 			}
 			.rightPic	{
 				float: left;
+				display: block;
 				width: 33.33%;
 				background-size: cover;
 			}
 			.big	{
 				float: left;
+				display: block;
 				width: 100%;
 				background-size: cover;
 			}
 			.topPic	{
+				display: inline-block;
 				width: 30%;
 				float: right;
 			}
@@ -138,6 +160,7 @@ table {
 			}
 
 			.bottomPic	{
+				display: inline-block;
 				width: 30%;
 				float: left;
 			}
