@@ -78,13 +78,11 @@ table {
 			  
 			    display: block;
 			    max-width: 100%;
-			    margin: auto;
 			    color: black;
 			}
 			header	{
 				width: 100%;
 				text-align: center;
-				margin: auto;
 			}
 
 			section	{
@@ -112,7 +110,6 @@ table {
 				width: 100%;
 				clear: both;
 				display: block;
-				margin: auto;
 			}
 			
 
