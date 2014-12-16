@@ -79,20 +79,16 @@ table {
 			    display: block;
 			    max-width: 100%;
 			    margin: auto;
-
-			    border: 2px dashed black;
 			    color: black;
 			}
 			header	{
 				width: 100%;
 				text-align: center;
-				border: 2px dashed blue;
 				margin: auto;
 			}
 
 			section	{
 				width: 100%;
-				border: 2px dashed red;
 
 			}
 
@@ -103,14 +99,12 @@ table {
 			p 	{
 				
 				display: inline-block;
-				border: 2px dashed white;
 
 			}
 			
 			img	{
 				
 				display: inline-block;
-				border: 2px dashed green;
 
 			}
 			footer	{
@@ -118,7 +112,6 @@ table {
 				clear: both;
 				display: block;
 				margin: auto;
-				border: 2px dashed yellow;
 			}
 
 
@@ -154,27 +147,24 @@ table {
 				display: inline-block;
 				width: 100%;
 				background-size: cover;
-				z-index: 2;
 			}
 			.topPic	{
 				display: inline-block;
 				width: 30%;
 				float: right;
-				border: 2px dashed white;
 			}
 
 			#aboutMe	{
-				width: 65%;
+				width: 70%;
 			}
 
 			.bottomPic	{
 				display: inline-block;
 				width: 30%;
 				float: left;
-				border: 1px dotted yellow;
 			}
 			#info	{
-				width: 65%;
+				width: 70%;
 			}
 
 
@@ -184,13 +174,11 @@ table {
 					text-align: center;
 					display: block;
 					margin: auto;
-					border: 2px dashed white;
 
 				}
 				img	{
 					display: block;
 					margin: auto;
-					border: 2px dashed green;
 
 				}
 
@@ -202,7 +190,6 @@ table {
 				.topPic	{
 					width: 95%;
 					float: none;
-					border: 2px dashed white;
 				}
 
 
@@ -214,7 +201,6 @@ table {
 				.bottomPic	{
 					width: 95%;
 					float: none;
-					border: 1px dotted yellow;
 				}
 			}
 
