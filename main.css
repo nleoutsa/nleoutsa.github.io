@@ -117,35 +117,37 @@ table {
 
 			.topBorder	{
 				background-color: red;
+				display: block;
+				float: left;
+				width: 100%;
 			}
 			.gallery	{
 				width: 100%;
 				height: 500px;
 				clear: both;
-				left: 0;
 			}
 			.leftPic	{
 				float: left;
-				display: inline-block;
+				display: block;
 				width: 33.33%;
 				background-size: cover;
 
 			}
 			.centerPic	{
 				float: left;
-				display: inline-block;
+				display: block;
 				width: 33.33%;
 				background-size: cover;
 			}
 			.rightPic	{
 				float: left;
-				display: inline-block;
+				display: block;
 				width: 33.33%;
 				background-size: cover;
 			}
 			.big	{
 				float: left;
-				display: inline-block;
+				display: block;
 				width: 100%;
 				background-size: cover;
 			}
