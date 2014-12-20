@@ -128,26 +128,26 @@ table {
 				float: left;
 				display: block;
 				width: 33.33%;
-				background-size: cover;
+				background-size: auto 100%;
 
 			}
 			.centerPic	{
 				float: left;
 				display: block;
 				width: 33.33%;
-				background-size: cover;
+				background-size: auto 100%;
 			}
 			.rightPic	{
 				float: left;
 				display: block;
 				width: 33.33%;
-				background-size: cover;
+				background-size: auto 100%;
 			}
 			.big	{
 				float: left;
 				display: block;
 				width: 100%;
-				background-size: cover;
+				background-size: auto 100%;
 			}
 			.topPic	{
 				display: inline-block;
