@@ -1,5 +1,12 @@
-			* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
-  License: none (public domain)
+
+/*
+====================================================================================================================
+====================================================================================================================
+STYLE RESET
+http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+License: none (public domain)
+====================================================================================================================
+====================================================================================================================
 */
 
 html, body, div, span, applet, object, iframe,
@@ -46,8 +53,13 @@ table {
   border-spacing: 0;
 }
 
-/*	above= style reset
-	below= grid	*/
+/*
+====================================================================================================================
+====================================================================================================================
+CUSTOM STYLES
+====================================================================================================================
+====================================================================================================================
+*/
 
 	*,
 	*:before,
@@ -59,211 +71,122 @@ table {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-			body  {
-			    background-color: #a5a5a5;
-			    font-family: 'Roboto Slab', serif;
-			  
-			    display: block;
-			    max-width: 100%;
-			    color: black;
-			}
-			header	{
-				width: 100%;
-				text-align: center;
-			}
-
-			section	{
-				width: 100%;
-
-			}
-
-
-			div	{
-				height: 200px;
-			}
-
-			p 	{
-				
-				display: inline-block;
-
-			}
-			
-			img	{
-				
-				display: inline-block;
-
-			}
-			footer	{
-				width: 100%;
-				clear: both;
-				display: block;
-			}
-			
-
-			.topBorder	{
-				background-color: red;
-				display: block;
-				float: left;
-				width: 100%;
-			}
-			.gallery	{
-				display: inline-block;
-				width: 100%;
-				clear: both;
-			}
-			.leftPic	{
-				float: left;
-				display: block;
-				width: 33.33%;
-				background-size: auto 100%;
-
-			}
-			.centerPic	{
-				float: left;
-				display: block;
-				width: 33.33%;
-				background-size: auto 100%;
-			}
-			.rightPic	{
-				float: left;
-				display: block;
-				width: 33.33%;
-				background-size: auto 100%;
-			}
-			.big	{
-				float: left;
-				display: block;
-				width: 100%;
-				background-size: auto 100%;
-			}
-			.topPic	{
-				display: inline-block;
-				width: 30%;
-				float: right;
-			}
-
-			#aboutMe	{
-				width: 70%;
-			}
-
-			.bottomPic	{
-				display: inline-block;
-				width: 30%;
-				float: left;
-			}
-			#info	{
-				width: 70%;
-			}
-
-
-			@media	(max-width: 500px)	{
-
-				p 	{
-					text-align: center;
-					display: block;
-					margin: auto;
-
-				}
-				img	{
-					display: block;
-					margin: auto;
-
-				}
-
-				#aboutMe	{
-					width: 95%;
-					float: none;
-					
-				}
-				.topPic	{
-					width: 95%;
-					float: none;
-				}
-
-
-				
-				#info	{
-					width: 95%;
-					float: none;
-				}
-				.bottomPic	{
-					width: 95%;
-					float: none;
-				}
-			}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			
-			    transition: left 2s;
-			    -webkit-transition: left 2s;
-			    -moz-transition: left 2s;
-			
-			    transition: top 3s;
-			    -webkit-transition: top 3s;
-			    -moz-transition: top 3s;
+    body	{
+        margin: 0 auto;
+        text-align: center;
+        max-width: 600px;
+        background: #a5a5a5;
+        font-family: 'Roboto Slab', serif;
+        color: white;
+    }
+    li {
+        display: inline;
+    }
+    div	{
+        transition: left 2s;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+    }
+    p {
+        transition: top 3s;
+        -webkit-transition: top 3s;
+        -moz-transition: top 3s;
+    }
+    h1  {
+        font-size: 32px;
+        margin: 30px auto;
+    }
+    h4	{
+        transition: top 3s;
+        -webkit-transition: top 3s;
+        -moz-transition: top 3s;
+        position: absolute;
+        text-align: justify;
+    }
+
+    a:hover   {
+        color: white;
+    }
+    a   {
+        color: #99FF99;
+        text-decoration: none;
+    }
+
+    .links  {
+        margin-bottom: 30px;
+    }
+    .links li   {
+        margin: 0 12px;
+    }
+    .profile {
+        position: relative;
+        max-width: 600px;
+        margin: 0 auto 250px auto;
+    }
+
+    .expand	div{
+        left: 200px;
+    }
+    .gallery	{
+        position: relative;
+        max-width: 600px;
+        margin: 0 auto;
+        top: -210px;
+    }
+    .leftPic {
+        height: 200px;
+        width: 200px;
+        background: ; /* left blank so JS can change it...*/
+        position: absolute;
+        left: 0px;
+        background-size: contain;
+    }
+    .photos {
+        height: 200px;
+        width: 200px;
+        background: ; /* left blank so JS can change it...*/
+        position: absolute;
+        left: 200px;
+        background-size: contain;
+        z-index: 1;
+    }
+    .rightPic {
+        height: 200px;
+        width: 200px;
+        background: ; /* left blank so JS can change it...*/
+        position: absolute;
+        left: 400px;
+        background-size: contain;
+    }
+    .big	{
+        height: 600px;
+        width: 600px;
+        background: ; /* left blank so JS can change it...*/
+        position: absolute;
+        left: 0px;
+        top: -420px;
+        background-size: cover;
+        z-index: -4;
+    }
+    .zoom	{
+        position: absolute;
+        top: 180px;
+    }
+    .topBorder	{
+        background: #a5a5a5;
+        z-index: -3;
+        width: 610px;
+        height: 620px;
+        left: -5px;
+        top: -420px;
+        position: absolute;
+    }
+
+
+    .info	{
+        top: 240px;
+    }
+
+    .lower	{
+        top: 830px;
+    }
