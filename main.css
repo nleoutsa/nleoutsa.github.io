@@ -142,6 +142,9 @@ CUSTOM STYLES
         background: ; /* left blank so JS can change it...*/
         position: absolute;
         left: 0px;
+            -moz-background-size: 200px 200px;
+         -webkit-background-size: 200px 200px;
+                 background-size: 200px 200px;
     }
     .photos {
         height: 200px;
@@ -150,6 +153,9 @@ CUSTOM STYLES
         position: absolute;
         left: 200px;
         z-index: 1;
+            -moz-background-size: 200px 200px;
+         -webkit-background-size: 200px 200px;
+                 background-size: 200px 200px;
     }
     .rightPic {
         height: 200px;
@@ -157,6 +163,9 @@ CUSTOM STYLES
         background: ; /* left blank so JS can change it...*/
         position: absolute;
         left: 400px;
+            -moz-background-size: 200px 200px;
+         -webkit-background-size: 200px 200px;
+                 background-size: 200px 200px;
     }
     .big	{
         height: 600px;

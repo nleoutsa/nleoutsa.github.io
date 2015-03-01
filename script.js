@@ -52,17 +52,19 @@
         //display images in a loop
         var loopImages = function() {
         $('.leftPic').css("background", images[currentImage - 1]);
-        $('.leftPic').css("background-size", "200px 200px");
+ //       $('.leftPic').css("background-size", "200px 200px");
         $('.photos').css("background", images[currentImage]);
-        $('.photos').css("background-size", "200px 200px");
+ //       $('.photos').css("background-size", "200px 200px");
         $('.rightPic').css("background", images[currentImage + 1]);
-        $('.rightPic').css("background-size", "200px 200px");
+ //       $('.rightPic').css("background-size", "200px 200px");
         $('.big').css("background", images[currentImage]);
         if (currentImage == 0) {
         $('.leftPic').css("background", images[images.length - 1]);
+ //       $('.leftPic').css("background-size", "200px 200px");
         }
         else if (currentImage == images.length - 1) {
         $('.rightPic').css("background", images[0]);
+ //       $('.rightPic').css("background-size", "200px 200px");
         }
         };
         // start with images collapsing
