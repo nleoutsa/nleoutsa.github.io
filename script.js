@@ -20,7 +20,7 @@
         "url('http://i.imgur.com/x3JLURh.jpg?1')" // guitar
         ];
         // what is the current image?
-        var currentImage = 0;
+        var currentImage = 1;
         //clicking left and right pics(or big pic) shuffles through image array
         $('.leftPic').click(function() {
         currentImage = currentImage - 1;
