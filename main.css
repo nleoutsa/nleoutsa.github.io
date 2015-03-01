@@ -142,16 +142,14 @@ CUSTOM STYLES
         background: ; /* left blank so JS can change it...*/
         position: absolute;
         left: 0px;
-        background-position: bottom;
-        background-origin: center;
     }
     .photos {
         height: 200px;
         width: 200px;
         background: ; /* left blank so JS can change it...*/
+        background-size: 200px;
         position: absolute;
         left: 200px;
-        background-position: center;
         z-index: 1;
     }
     .rightPic {
@@ -160,7 +158,6 @@ CUSTOM STYLES
         background: ; /* left blank so JS can change it...*/
         position: absolute;
         left: 400px;
-        background-position: bottom;
     }
     .big	{
         height: 600px;
