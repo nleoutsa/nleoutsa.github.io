@@ -143,7 +143,7 @@ CUSTOM STYLES
         position: absolute;
         left: 0px;
         background-size: contain;
-        background-position: center;
+        background-position: bottom;
     }
     .photos {
         height: 200px;
@@ -151,7 +151,8 @@ CUSTOM STYLES
         background: ; /* left blank so JS can change it...*/
         position: absolute;
         left: 200px;
-        background-size: contain;
+
+        background-position: center;
         z-index: 1;
     }
     .rightPic {
@@ -161,6 +162,8 @@ CUSTOM STYLES
         position: absolute;
         left: 400px;
         background-size: contain;
+
+        background-position: bottom;
     }
     .big	{
         height: 600px;
