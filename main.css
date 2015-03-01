@@ -142,8 +142,6 @@ CUSTOM STYLES
         background: ; /* left blank so JS can change it...*/
         position: absolute;
         left: 0px;
-        background-size: 200px 200px;
-        background-repeat: no-repeat;
     }
     .photos {
         height: 200px;
@@ -152,8 +150,6 @@ CUSTOM STYLES
         position: absolute;
         left: 200px;
         z-index: 1;
-        background-size: 200px 200px;
-        background-repeat: no-repeat;
     }
     .rightPic {
         height: 200px;
@@ -161,8 +157,6 @@ CUSTOM STYLES
         background: ; /* left blank so JS can change it...*/
         position: absolute;
         left: 400px;
-        background-size: 200px 200px;
-        background-repeat: no-repeat;
     }
     .big	{
         height: 600px;
