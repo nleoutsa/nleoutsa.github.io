@@ -2,16 +2,16 @@
         var images = [
         "url('http://i.imgur.com/wiu9cFk.jpg')", // horse
         "url('http://i.imgur.com/TJ7YEjs.jpg')", // green sweatshirt
+        "url('http://i.imgur.com/kutJzmS.jpg')", // the stare
+        "url('http://i.imgur.com/76xH6od.jpg')", // reclining
         "url('http://i.imgur.com/TFkftVq.jpg')", // Lady Agnew
         "url('http://i.imgur.com/xnv5NqD.jpg')", // emma sitting
+        "url('http://i.imgur.com/EQOvgXu.jpg')", // elephants
         "url('http://i.imgur.com/09m22VZ.jpg')", // track
         "url('http://i.imgur.com/YiVlgnF.jpg')", // emma yellow
         "url('http://i.imgur.com/ga60NEv.jpg')", // first self portrait
-        "url('http://i.imgur.com/EQOvgXu.jpg')", // elephants
         "url('http://i.imgur.com/Pzz6Ded.jpg')", // nose ring
         "url('http://i.imgur.com/p0Mp7EM.jpg')", // sailor
-        "url('http://i.imgur.com/76xH6od.jpg')", // reclining
-        "url('http://i.imgur.com/kutJzmS.jpg')", // the stare
         "url('http://i.imgur.com/WDTavoX.jpg')", // lizard
         "url('http://i.imgur.com/fwXjPPZ.jpg')", // coins
         "url('http://i.imgur.com/HLxE16q.jpg')", // desk
