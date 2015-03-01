@@ -143,6 +143,7 @@ CUSTOM STYLES
         position: absolute;
         left: 0px;
         background-size: contain;
+        background-position: center;
     }
     .photos {
         height: 200px;
