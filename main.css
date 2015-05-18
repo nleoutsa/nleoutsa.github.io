@@ -194,10 +194,10 @@ CUSTOM STYLES
 .projects {
 	margin: 10px auto;
 	padding: 0 10px;
+	list-style: none;
 }
 .projects li {
 	display: block;
-	list-style: none;
 	margin: 5px;
 	float: left;
 }
