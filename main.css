@@ -191,7 +191,16 @@ CUSTOM STYLES
         top: 830px;
     }
 
-
+.projects {
+	margin: 10px auto;
+	padding: 0 10px;
+}
+.projects li {
+	display: block;
+	list-style: none;
+	margin: 5px;
+	float: left;
+}
 
     #Github {
         color: #FFCCFF;
